@@ -1,0 +1,1284 @@
+---
+title: "Explanation by essence"
+author: "Anonymous"
+date: "`r Sys.time()`"
+output:
+  bookdown::html_document2:
+    toc: true
+    toc_depth: 6
+    toc_float: true
+    theme: cosmo
+    highlight: tango
+---
+
+# Load packages
+```{r eval=TRUE, include=FALSE, message=FALSE, warning=FALSE}
+
+library("janitor")         # for cleaning column names
+library("brms")            # for Bayesian data analysis
+library("emmeans")         # for post-hoc tests
+library("kableExtra")      # for tables
+library("DT")              # for interactive tables
+library("tidyverse")       # for everything else
+
+```
+
+# Settings
+```{r message=FALSE, warning=FALSE}
+
+# set theme 
+theme_set(theme_classic())
+
+# sum coding
+options(contrasts = c("contr.sum","contr.poly"))
+
+# suppress grouping warning 
+options(dplyr.summarise.inform = F)
+
+# set knitr option
+knitr::opts_chunk$set(message = FALSE,
+                      warning = FALSE,
+                      echo = TRUE,
+                      fig.align = "center")
+
+```
+
+# EXPERIMENT 1: ARTIFACTS AND BIOLOGICAL KINDS
+
+## DATA
+
+### Read in data
+```{r message=FALSE, warning=FALSE}
+
+df.exp1 = read_csv("../../data/experiment1/experiment1.csv") 
+
+```
+
+### Wrangle for coding
+```{r}
+
+df.exp1 = df.exp1 %>%
+  clean_names() %>%
+  select(raccoon_feature:condition) %>% 
+  slice(-(1:2)) %>% 
+  pivot_longer(cols = contains("_"),
+               names_to = c("item", ".value"),
+               names_sep = "_") %>% 
+  mutate(across(where(is.character), 
+                tolower)) %>% 
+  arrange(factor(condition, 
+                 levels = c("artifact", 
+                            "biological"))) %>% 
+  mutate(purpose = 0, 
+         cause = 0, 
+         .after = explain) %>% 
+  relocate(condition, 
+           sex, 
+           race, 
+           age, 
+           .after = last_col()) %>% 
+  drop_na(feature, explain) %>% 
+  mutate(participant = rep(1:(nrow(.) / 4), each = 4)) %>% 
+  relocate(participant, 
+           .before = 1)
+
+# write_csv(df.exp1, "../../data/experiment1/experiment1_for_coding.csv")
+
+```
+
+### Compare coded data sets
+```{r message=FALSE, warning=FALSE}
+
+df.exp1_coded_a = read_csv("../../data/experiment1/experiment1_coded_a.csv") 
+df.exp1_coded_b = read_csv("../../data/experiment1/experiment1_coded_b.csv") 
+
+# Join datasets and identify matching rows
+df.exp1_coded = df.exp1_coded_a %>%
+  inner_join(df.exp1_coded_b, 
+             by = c("participant", 
+                    "item", 
+                    "feature", 
+                    "explain"),
+             suffix = c("_a", "_b")) %>%
+  mutate(match = purpose_a == purpose_b & cause_a == cause_b)
+
+# Calculate agreement metrics
+total_rows = nrow(df.exp1_coded)
+matching_rows = sum(df.exp1_coded$match, na.rm = TRUE)
+agreement_rate = (matching_rows / total_rows) * 100
+
+# Create a data frame for the results
+df.exp1_agreement = tibble(
+  Metric = c("Total Rows", 
+             "Matching Rows", 
+             "Agreement Rate (%)"),
+  Value = c(total_rows, 
+            matching_rows, 
+            round(agreement_rate, 2)))
+
+# Print results 
+kable(df.exp1_agreement, 
+      format = "html", 
+      caption = "Inter-Coder Agreement Summary") %>%
+  kable_styling(bootstrap_options = c("striped", 
+                                      "hover", 
+                                      "condensed"),
+                full_width = FALSE,
+                position = "center") %>%
+  column_spec(1, bold = TRUE) %>%
+  column_spec(2, width = "10em")
+
+```
+
+### Create final coded data set
+
+##### Mismatches (for correcting)
+```{r}
+
+df.exp1_mismatches = df.exp1_coded %>% 
+  filter(purpose_a != purpose_b | cause_a != cause_b | is.na(match)) %>% 
+  select(participant, 
+         item, 
+         feature, 
+         explain,
+         purpose_a,  
+         cause_a,
+         purpose_b,
+         cause_b,
+         condition = condition_a,
+         sex = sex_a,
+         race = race_a,
+         age = age_a)
+
+# write_csv(df.exp1_mismatches, "../../data/experiment1/experiment1_coded_mismatches.csv")
+
+```
+
+##### Matches
+```{r}
+
+df.exp1_matches = df.exp1_coded %>% 
+  filter(purpose_a == purpose_b & cause_a == cause_b) %>%
+  select(participant, 
+         item, 
+         feature, 
+         explain,
+         purpose = purpose_a,  
+         cause = cause_a,
+         condition = condition_a,
+         sex = sex_a,
+         race = race_a,
+         age = age_a)
+
+```
+
+##### Combine corrected mismatches and matches
+```{r message=FALSE, warning=FALSE}
+
+# Read in corrected mismatches
+df.exp1_corrected_mismatches = read_csv("../../data/experiment1/experiment1_coded_mismatches_corrected.csv")
+
+df.exp1_corrected_mismatches = df.exp1_corrected_mismatches  %>%
+  mutate(purpose = case_when(correct == "a" ~ purpose_a,
+                             correct == "b" ~ purpose_b),
+         cause = case_when(correct == "a" ~ cause_a,
+                           correct == "b" ~ cause_b)) %>%
+  select(participant, 
+         item, 
+         feature, 
+         explain, 
+         purpose, 
+         cause, 
+         condition, 
+         sex, 
+         race, 
+         age)
+
+df.exp1 = bind_rows(df.exp1_corrected_mismatches, 
+                    df.exp1_matches)
+
+```
+
+## STATS
+
+### Demographics
+```{r}
+
+df.exp1_unique = df.exp1 %>%
+  distinct(participant, 
+           sex, 
+           race, 
+           age)
+
+# Summarize counts for sex
+df.exp1_sex_summary = df.exp1_unique %>%
+  count(sex, name = "count") %>%
+  mutate(category = "Sex", 
+         variable = sex,
+         count = as.character(count)) %>% 
+  select(category, 
+         variable, 
+         count)
+
+# Summarize counts for race
+df.exp1_race_summary = df.exp1_unique %>%
+  count(race, name = "count") %>%
+  mutate(category = "Race", 
+         variable = race,
+         count = as.character(count)) %>%  
+  select(category, 
+         variable, 
+         count)
+
+# Summarize mean and SD for age
+df.exp1_age_summary = df.exp1_unique %>%
+  summarise(mean_age = mean(age, na.rm = TRUE),
+            sd_age = sd(age, na.rm = TRUE)) %>%
+  mutate(category = "Age",
+         variable = "All Participants",
+         count = str_c(round(mean_age, 2), " (", round(sd_age, 2), ")")) %>%
+  select(category, 
+         variable, 
+         count)
+
+# Combine summaries
+df.exp1_summary_table = bind_rows(df.exp1_sex_summary, 
+                                  df.exp1_race_summary, 
+                                  df.exp1_age_summary)
+
+# Create table
+kable(df.exp1_summary_table, 
+      format = "html", 
+      caption = "Demographic Summary: Sex, Race, and Age",
+      col.names = c("Category", 
+                    "Variable", 
+                    "Count / Mean (SD)"),
+      digits = 2) %>%
+  kable_styling(bootstrap_options = c("striped", 
+                                      "hover", 
+                                      "condensed"),
+                full_width = FALSE,
+                position = "center") %>%
+  column_spec(1:2, bold = TRUE) %>%
+  column_spec(3, width = "10em")
+
+```
+
+### Bayesian Model
+```{r}
+
+df.exp1_different = df.exp1 %>%
+  mutate(response_pattern = case_when(
+    cause == 1 & purpose == 1 ~ "both",
+    cause == 0 & purpose == 0 ~ "neither",
+    TRUE ~ "different")) %>%
+  filter(response_pattern == "different") %>%
+  mutate(difference = purpose - cause,
+        difference = recode(difference, `-1` = 0),
+        condition = as_factor(condition),
+        condition = fct_relevel(condition, 
+                                "artifact",   
+                                "biological"))
+
+# Check contrast values
+ contrasts(df.exp1_different$condition)
+
+fit.brm.exp1 = brm(formula = difference ~ 1 + condition + (1 | participant) + (1 | item), 
+                     data = df.exp1_different,
+                     family = "bernoulli",
+                     seed = 1,
+                     iter = 4000,
+                     warmup = 1000,
+                     control = list(adapt_delta = .99),
+                     file = "cache/exp1") 
+
+fit.brm.exp1
+
+```
+
+#### Follow-up test
+```{r}
+
+# effect of question 
+fit.brm.exp1 %>% 
+  emmeans(spec = pairwise ~ condition, 
+          type = "response")
+
+```
+
+##### Means and Confidence Intervals
+
+###### All data
+```{r}
+
+set.seed(1)
+
+# Compute proportions and CIs by condition and response pattern
+df.exp1_summary = df.exp1 %>%
+  mutate(response_pattern = case_when(
+    cause == 0 & purpose == 0 ~ "neither",
+    cause == 0 & purpose == 1 ~ "purpose only",
+    cause == 1 & purpose == 0 ~ "cause only",
+    cause == 1 & purpose == 1 ~ "both")) %>%
+  pivot_wider(names_from = response_pattern,
+              values_from = response_pattern,
+              values_fn = function(x) as.integer(!is.na(x)),
+              values_fill = 0) %>%
+  pivot_longer(cols = c("neither", 
+                        "purpose only", 
+                        "cause only"),
+               names_to = "response_pattern",
+               values_to = "is_pattern") %>%
+  group_by(condition, 
+           response_pattern) %>%
+  summarise(mean = mean(is_pattern, na.rm = TRUE) * 100,  
+            ci_lower = mean_cl_normal(is_pattern)$ymin * 100,  
+            ci_upper = mean_cl_normal(is_pattern)$ymax * 100,  
+            .groups = "drop")
+
+# Print results
+kable(df.exp1_summary, format = "html", 
+      caption = "Mean Proportion and 95% CI by Response Pattern and Condition",
+      digits = 2) %>%
+  kable_styling(bootstrap_options = c("striped", 
+                                      "hover", 
+                                      "condensed"),
+                full_width = FALSE,
+                position = "center") %>%
+  column_spec(1:2, bold = TRUE) %>%
+  column_spec(3:4, width = "8em")
+
+```
+
+###### Purpose and Cause Only
+```{r}
+
+set.seed(1)
+
+df.exp1_different_summary = df.exp1_different %>% 
+  group_by(condition) %>% 
+  summarise(mean = mean(difference, na.rm = TRUE),
+            ci_lower = mean_cl_normal(difference)$ymin,
+            ci_upper = mean_cl_normal(difference)$ymax,
+            .groups = "drop")
+
+# Print results
+kable(df.exp1_different_summary, 
+      format = "html", 
+      caption = "Mean and 95% CI of Difference by Condition",
+      digits = 2) %>%
+  kable_styling(bootstrap_options = c("striped", 
+                                      "hover", 
+                                      "condensed"),
+                full_width = FALSE,
+                position = "center") %>%
+  column_spec(1, bold = TRUE) %>%
+  column_spec(2:4, width = "8em")
+
+```
+
+
+## PLOTS
+
+### Full Response Patterns
+```{r fig.height=5, fig.width=8}
+
+df.plot = df.exp1 %>%
+  mutate(response_pattern = case_when(
+    cause == 0 & purpose == 0 ~ "neither",
+    cause == 0 & purpose == 1 ~ "purpose only",
+    cause == 1 & purpose == 0 ~ "cause only",
+    cause == 1 & purpose == 1 ~ "both"))  %>%
+  group_by(condition, 
+           item, 
+           response_pattern) %>%
+  summarize(n = n()) %>%
+  ungroup() %>%
+  group_by(item) %>%
+  mutate(percentage = n / sum(n) * 100) %>%
+  ungroup() %>%
+  mutate(item = recode(item, "canopener" = "can opener"),
+         condition = factor(condition,
+                            levels = c("artifact", 
+                                       "biological"),
+                            labels = c("Artifacts", 
+                                       "Biological Kinds")),
+         response_pattern = factor(response_pattern,
+                                   levels = c("purpose only", 
+                                              "cause only", 
+                                              "both", 
+                                              "neither")))
+
+ggplot(data = df.plot,
+       mapping = aes(x = item,
+                     y = percentage,
+                     group = response_pattern,
+                     color = response_pattern,
+                     fill = response_pattern)) +
+  geom_col(color = "black",
+           position = position_stack(reverse = TRUE)) +
+  facet_wrap(~condition,
+             scales = "free_x") +
+  scale_fill_manual(values = c("cause only" = "#dc3410",
+                               "purpose only" = "#377EB8",
+                               "both" = "#800080",
+                               "neither" = "#000000")) +
+  scale_color_manual(values = c("cause only" = "#dc3410",
+                                "purpose only" = "#377EB8",
+                                "both" = "#800080",
+                                "neither" = "#000000")) +
+  scale_y_continuous(breaks = seq(0, 100, 25),
+                     labels = str_c(seq(0, 100, 25), "%"),
+                     expand = expansion(add = c(0, 0))) +
+  scale_x_discrete(expand = expansion(add = c(0, 0))) +
+  coord_cartesian(clip = "off") +
+  labs(y = "Response probability") +
+  theme(legend.position = "bottom",
+        legend.title = element_blank(),
+        legend.text = element_text(size = 14),
+        axis.text.y = element_text(size = 12),
+        axis.title.y = element_text(size = 16),
+        axis.text.x = element_text(size = 12),
+        axis.title.x = element_blank(),
+        strip.background = element_blank(),
+        strip.text = element_text(size = 16),
+        panel.spacing = unit(.4, "cm"))
+
+ggsave(filename = "../../figures/experiment1/exp1_plot.png", 
+       height = 5, 
+       width = 8)
+
+```
+
+# EXPERIMENT 2: WITHIN AND BETWEEN KINDS
+
+## DATA
+
+### Read in data
+```{r message=FALSE, warning=FALSE}
+
+df.exp2 = read_csv("../../data/experiment2/experiment2.csv") 
+
+```
+
+### Wrangle for coding
+```{r}
+
+df.exp2 = df.exp2 %>%
+  clean_names() %>%
+  select(herons_within:wolves_between, 
+         sex, 
+         race, 
+         age) %>%  
+  slice(-(1:2)) %>%  
+  pivot_longer(cols = contains("_"),
+               names_to = c("item", 
+                            "condition"),
+               names_sep = "_",
+               values_to = "explain") %>%
+  mutate(across(where(is.character), tolower)) %>% 
+  arrange(factor(condition, 
+                 levels = c("within", 
+                            "between"))) %>% 
+  mutate(purpose = 0, 
+         cause = 0, 
+         .after = explain) %>%
+  relocate(condition, 
+           sex, 
+           race, 
+           age, 
+           .after = last_col()) %>%
+  drop_na(explain) %>%  
+  mutate(participant = rep(1:(nrow(.) / 4), each = 4)) %>%  
+  relocate(participant, .before = 1)
+
+write_csv(df.exp2, "../../data/experiment2/experiment2_for_coding.csv")
+
+```
+
+### Compare coded data sets
+
+```{r message=FALSE, warning=FALSE}
+
+df.exp2_coded_a = read_csv("../../data/experiment2/experiment2_coded_a.csv") 
+df.exp2_coded_b = read_csv("../../data/experiment2/experiment2_coded_b.csv") 
+
+# Join datasets and identify matching rows
+df.exp2_coded = df.exp2_coded_a %>%
+  inner_join(df.exp2_coded_b, 
+             by = c("participant", 
+                    "item", 
+                    "explain"),
+             suffix = c("_a", "_b")) %>%
+  mutate(match = purpose_a == purpose_b & cause_a == cause_b)
+
+# Calculate agreement metrics
+total_rows = nrow(df.exp2_coded)
+matching_rows = sum(df.exp2_coded$match, na.rm = TRUE)
+agreement_rate = (matching_rows / total_rows) * 100
+
+# Create a data frame for the results
+df.exp2_agreement = tibble(Metric = c("Total Rows", 
+                                      "Matching Rows", 
+                                      "Agreement Rate (%)"),
+                           Value = c(total_rows, 
+                                     matching_rows, 
+                                     round(agreement_rate, 2)))
+
+# Print results 
+kable(df.exp2_agreement, 
+      format = "html", 
+      caption = "Inter-Coder Agreement Summary") %>%
+  kable_styling(bootstrap_options = c("striped", 
+                                      "hover", 
+                                      "condensed"),
+                full_width = FALSE,
+                position = "center") %>%
+  column_spec(1, bold = TRUE) %>%
+  column_spec(2, width = "10em")
+
+```
+
+### Create final coded data set
+
+##### Mismatches (for correcting)
+```{r}
+
+df.exp2_mismatches = df.exp2_coded %>% 
+  filter(purpose_a != purpose_b | cause_a != cause_b | is.na(match)) %>% 
+  select(participant, item, explain,
+    purpose_a,  
+         cause_a,
+         purpose_b,
+         cause_b,
+         condition = condition_a,
+         sex = sex_a,
+         race = race_a,
+         age = age_a)
+
+# write_csv(df.exp2_mismatches, "../../data/experiment2/experiment2_coded_mismatches.csv")
+
+```
+
+##### Matches
+```{r}
+
+df.exp2_matches = df.exp2_coded %>% 
+  filter(purpose_a == purpose_b & cause_a == cause_b) %>%
+  select(participant, item, explain,
+         purpose = purpose_a,  
+         cause = cause_a,
+         condition = condition_a,
+         sex = sex_a,
+         race = race_a,
+         age = age_a)
+
+```
+
+##### Combine corrected mismatches and matches
+```{r}
+
+# Read in corrected mismatches
+df.exp2_corrected_mismatches = read_csv("../../data/experiment2/experiment2_coded_mismatches_corrected.csv")
+
+df.exp2_corrected_mismatches = df.exp2_corrected_mismatches  %>%
+  mutate(purpose = case_when(correct == "a" ~ purpose_a,
+                             correct == "b" ~ purpose_b),
+         cause = case_when(correct == "a" ~ cause_a,
+                           correct == "b" ~ cause_b)) %>%
+  select(participant, 
+         item, 
+         explain, 
+         purpose, 
+         cause, 
+         condition, 
+         sex, 
+         race, 
+         age)
+
+df.exp2 = bind_rows(df.exp2_corrected_mismatches, 
+                    df.exp2_matches)
+
+```
+
+## STATS
+
+### Demographics
+```{r}
+
+df.exp2_unique = df.exp2 %>%
+  distinct(participant, 
+           sex, 
+           race, 
+           age)
+
+# Summarize counts for sex
+df.exp2_sex_summary = df.exp2_unique %>%
+  count(sex, name = "count") %>%
+  mutate(category = "Sex", 
+         variable = sex,
+         count = as.character(count)) %>% 
+  select(category, 
+         variable, 
+         count)
+
+# Summarize counts for race
+df.exp2_race_summary = df.exp2_unique %>%
+  count(race, name = "count") %>%
+  mutate(category = "Race", 
+         variable = race,
+         count = as.character(count)) %>%  
+  select(category, 
+         variable, 
+         count)
+
+# Summarize mean and SD for age
+df.exp2_age_summary = df.exp2_unique %>%
+  summarise(mean_age = mean(age, na.rm = TRUE),
+            sd_age = sd(age, na.rm = TRUE)) %>%
+  mutate(category = "Age",
+         variable = "All Participants",
+         count = str_c(round(mean_age, 2), " (", round(sd_age, 2), ")")) %>%
+  select(category, 
+         variable, 
+         count)
+
+# Combine summaries
+df.exp2_summary_table = bind_rows(df.exp2_sex_summary, 
+                                  df.exp2_race_summary, 
+                                  df.exp2_age_summary)
+
+# Print results
+kable(df.exp2_summary_table, 
+      format = "html", 
+      caption = "Demographic Summary: Sex, Race, and Age",
+      col.names = c("Category", 
+                    "Variable", 
+                    "Count / Mean (SD)"),
+      digits = 2) %>%
+  kable_styling(bootstrap_options = c("striped", 
+                                      "hover", 
+                                      "condensed"),
+                full_width = FALSE,
+                position = "center") %>%
+  column_spec(1:2, bold = TRUE) %>%
+  column_spec(3, width = "10em")
+
+```
+
+### Bayesian Model
+```{r}
+
+df.exp2_different = df.exp2 %>%
+  mutate(response_pattern = case_when(cause == 1 & purpose == 1 ~ "both",
+                                      cause == 0 & purpose == 0 ~ "neither",
+                                      TRUE ~ "different")) %>%
+  filter(response_pattern == "different") %>%
+  mutate(difference = purpose - cause,
+         difference = recode(difference, `-1` = 0),
+         condition = as_factor(condition),
+         condition = fct_relevel(condition, 
+                                 "within"))
+
+# Check contrast values
+contrasts(df.exp2_different$condition)
+
+fit.brm.exp2 = brm(formula = difference ~ 1 + condition + (1 | participant) + (1 | item), 
+                   data = df.exp2_different,
+                   family = "bernoulli",
+                   seed = 1,
+                   iter = 4000,
+                   warmup = 1000,
+                   control = list(adapt_delta = .99),
+                   file = "cache/exp2") 
+
+fit.brm.exp2
+
+```
+
+#### Follow-up test
+```{r}
+
+# effect of question 
+fit.brm.exp2 %>% 
+  emmeans(spec = pairwise ~ condition, 
+          type = "response")
+
+```
+
+##### Means and Confidence Intervals
+
+###### All data
+```{r}
+
+set.seed(1)
+
+# Compute proportions and CIs by condition and response pattern
+df.exp2_summary = df.exp2 %>%
+  mutate(response_pattern = case_when(cause == 0 & purpose == 0 ~ "neither",
+                                      cause == 0 & purpose == 1 ~ "purpose only",
+                                      cause == 1 & purpose == 0 ~ "cause only",
+                                      cause == 1 & purpose == 1 ~ "both")) %>%
+  pivot_wider(names_from = response_pattern,
+              values_from = response_pattern,
+              values_fn = function(x) as.integer(!is.na(x)),
+              values_fill = 0) %>%
+  pivot_longer(cols = c("neither", 
+                        "purpose only", 
+                        "cause only", 
+                        "both"),
+               names_to = "response_pattern",
+               values_to = "is_pattern") %>%
+  group_by(condition, response_pattern) %>%
+  summarise(mean = mean(is_pattern, na.rm = TRUE) * 100,  
+            ci_lower = mean_cl_normal(is_pattern)$ymin * 100,  
+            ci_upper = mean_cl_normal(is_pattern)$ymax * 100,  
+            .groups = "drop")
+
+# Print results
+kable(df.exp2_summary, format = "html", 
+      caption = "Mean Proportion and 95% CI by Response Pattern and Condition",
+      digits = 2) %>%
+  kable_styling(bootstrap_options = c("striped", 
+                                      "hover", 
+                                      "condensed"),
+                full_width = FALSE,
+                position = "center") %>%
+  column_spec(1:2, bold = TRUE) %>%
+  column_spec(3:4, width = "8em")
+
+```
+
+###### Purpose and Cause Only
+```{r}
+
+set.seed(1)
+
+df.exp2_different_summary = df.exp2_different %>% 
+  group_by(condition) %>% 
+  summarise( mean = mean(difference, na.rm = TRUE),
+             ci_lower = mean_cl_normal(difference)$ymin,
+             ci_upper = mean_cl_normal(difference)$ymax,
+             .groups = "drop")
+
+# Print results
+kable(df.exp2_different_summary, 
+      format = "html", 
+      caption = "Mean and 95% CI of Difference by Condition",
+      digits = 2) %>%
+  kable_styling(bootstrap_options = c("striped", 
+                                      "hover", 
+                                      "condensed"),
+                full_width = FALSE,
+                position = "center") %>%
+  column_spec(1, bold = TRUE) %>%
+  column_spec(2:4, width = "8em")
+
+```
+
+## PLOTS
+
+### Full Response Patterns
+```{r fig.height=5, fig.width=8}
+
+df.plot = df.exp2 %>% 
+  mutate(response_pattern = case_when(cause == 0 & purpose == 0 ~ "neither",
+                                      cause == 0 & purpose == 1 ~ "purpose only",
+                                      cause == 1 & purpose == 0 ~ "cause only",
+                                      cause == 1 & purpose == 1 ~ "both"))  %>% 
+  group_by(condition, 
+           item, 
+           response_pattern) %>%
+  summarize(n = n()) %>%
+  ungroup() %>%
+  group_by(condition, 
+           item) %>%
+  mutate(percentage = n / sum(n) * 100) %>%
+  ungroup() %>%
+  mutate(item = recode(item, 
+                       "polarbear" = "polar bears"),
+         condition = factor(condition,
+                            levels = c("within", 
+                                       "between"),
+                            labels = c("Within Species", 
+                                       "Between Species")),
+         response_pattern = factor(response_pattern, 
+                                   levels = c("purpose only",
+                                              "cause only",
+                                              "both", 
+                                              "neither")))
+
+ggplot(data = df.plot,
+       mapping = aes(x = item,
+                     y = percentage,
+                     group = response_pattern,
+                     color = response_pattern,
+                     fill = response_pattern)) +
+  geom_col(color = "black",
+           position = position_stack(reverse = TRUE)) +
+  facet_wrap(~condition,
+             scales = "free_x") +
+  scale_fill_manual(values = c("cause only" = "#dc3410",
+                               "purpose only" = "#377EB8",
+                               "both" = "#800080",
+                               "neither" = "#000000")) +
+  scale_color_manual(values = c("cause only" = "#dc3410",
+                                "purpose only" = "#377EB8",
+                                "both" = "#800080",
+                                "neither" = "#000000")) +
+  scale_y_continuous(breaks = seq(0, 100, 25),
+                     labels = str_c(seq(0, 100, 25), "%"),
+                     expand = expansion(add = c(0, 0))) +
+  scale_x_discrete(expand = expansion(add = c(0, 0))) +
+  coord_cartesian(clip = "off") +
+  labs(y = "Response probability") +
+  theme(legend.position = "bottom",
+        legend.title = element_blank(),
+        legend.text = element_text(size = 14),
+        axis.text.y = element_text(size = 12),
+        axis.title.y = element_text(size = 16),
+        axis.text.x = element_text(size = 12),
+        axis.title.x = element_blank(),
+        strip.background = element_blank(),
+        strip.text = element_text(size = 16),
+        panel.spacing = unit(.4, "cm"))
+
+ggsave(filename = "../../figures/experiment2/exp2_plot.png", 
+       height = 5, 
+       width = 8)
+
+```
+
+# EXPERIMENT 3: BIOLOGICAL AND NON-LIVING NATURAL KINDS
+
+## ITEM SELECTION
+
+### Read in data
+```{r}
+
+df.exp3_items = read_csv("../../data/experiment3/items/exp3_items.csv") 
+
+```
+
+### Select items
+```{r}
+
+set.seed(1)
+
+
+df.exp3_items_selected = df.exp3_items %>%
+  group_by(kind) %>%
+  slice_sample(n = 8) %>%
+  ungroup()
+
+
+# write.csv(df.exp3_items_selected, "../../data/experiment3/items/exp3_items_selected.csv")
+
+```
+
+## DATA
+
+### Read in data
+```{r message=FALSE, warning=FALSE}
+
+df.exp3 = read_csv("../../data/experiment3/experiment3.csv") 
+
+```
+
+### Wrangle for coding
+```{r}
+
+df.exp3 = df.exp3 %>%
+  clean_names() %>%
+  select(dog_feature:condition) %>% 
+  slice(-(1:2)) %>% 
+  pivot_longer(cols = contains("_"),
+               names_to = c("item", 
+                            ".value"),
+               names_sep = "_") %>% 
+  mutate(across(where(is.character), tolower)) %>% 
+  arrange(factor(condition, 
+                 levels = c("chem", 
+                            "bio"))) %>% 
+  mutate(purpose = 0, 
+         cause = 0) %>% 
+  relocate(condition, 
+           sex, 
+           race, 
+           age, 
+           .after = last_col()) %>% 
+  drop_na(feature, explain) %>% 
+  mutate(participant = rep(1:(nrow(.) / 4), each = 4)) %>% 
+  relocate(participant, 
+           .before = 1)
+
+# write_csv(df.exp3, "../../data/experiment3/experiment3_for_coding.csv")
+
+```
+
+### Compare coded data sets
+```{r message=FALSE, warning=FALSE}
+
+df.exp3_coded_a = read_csv("../../data/experiment3/experiment3_coded_a.csv") 
+df.exp3_coded_b = read_csv("../../data/experiment3/experiment3_coded_b.csv") 
+
+# Join datasets and identify matching rows
+df.exp3_coded = df.exp3_coded_a %>%
+  inner_join(df.exp3_coded_b, 
+             by = c("participant", 
+                    "item", 
+                    "feature", 
+                    "explain"),
+             suffix = c("_a", "_b")) %>%
+  mutate(match = purpose_a == purpose_b & cause_a == cause_b)
+
+# Calculate agreement metrics
+total_rows = nrow(df.exp3_coded)
+matching_rows = sum(df.exp3_coded$match, na.rm = TRUE)
+agreement_rate = (matching_rows / total_rows) * 100
+
+
+# Create a data frame for the results
+df.exp3_agreement = tibble(
+  Metric = c("Total Rows", 
+             "Matching Rows", 
+             "Agreement Rate (%)"),
+  Value = c(total_rows, 
+            matching_rows, 
+            round(agreement_rate, 2)))
+
+# Print results 
+kable(df.exp3_agreement , 
+      format = "html", 
+      caption = "Inter-Coder Agreement Summary") %>%
+  kable_styling(bootstrap_options = c("striped", 
+                                      "hover", 
+                                      "condensed"),
+                full_width = FALSE,
+                position = "center") %>%
+  column_spec(1, bold = TRUE) %>%
+  column_spec(2, width = "10em")
+
+```
+
+### Create final coded data set
+
+##### Mismatches (for correcting)
+```{r}
+
+df.exp3_mismatches = df.exp3_coded %>% 
+  filter(purpose_a != purpose_b | cause_a != cause_b | is.na(match)) %>% 
+  select(participant, item, feature, explain,
+         purpose_a,  
+         cause_a,
+         purpose_b,
+         cause_b,
+         condition = condition_a,
+         sex = sex_a,
+         race = race_a,
+         age = age_a)
+
+# write_csv(df.exp3_mismatches, "../../data/experiment3/experiment3_coded_mismatches.csv")
+
+```
+
+##### Matches
+```{r}
+
+df.exp3_matches = df.exp3_coded %>%
+  filter(purpose_a == purpose_b & cause_a == cause_b) %>%
+  select(participant, 
+         item, 
+         feature, 
+         explain,
+         purpose = purpose_a,
+         cause = cause_a,
+         condition = condition_a,
+         sex = sex_a,
+         race = race_a,
+         age = age_a)
+
+```
+
+##### Combine corrected mismatches and matches
+```{r message=FALSE, warning=FALSE}
+
+# Read in corrected mismatches
+df.exp3_corrected_mismatches = read_csv("../../data/experiment3/experiment3_coded_mismatches_corrected.csv")
+
+df.exp3_corrected_mismatches = df.exp3_corrected_mismatches  %>%
+  mutate(purpose = case_when(correct == "a" ~ purpose_a,
+                             correct == "b" ~ purpose_b),
+         cause = case_when(correct == "a" ~ cause_a,
+                           correct == "b" ~ cause_b)) %>%
+  select(participant, 
+         item, 
+         feature, 
+         explain, 
+         purpose, 
+         cause, 
+         condition, 
+         sex, 
+         race, 
+         age)
+
+df.exp3 = bind_rows(df.exp3_corrected_mismatches, 
+                    df.exp3_matches)
+
+```
+
+## STATS
+
+### Demographics
+```{r}
+
+df.exp3_unique = df.exp3 %>%
+  distinct(participant, 
+           sex, 
+           race, 
+           age)
+
+# Summarize counts for sex
+df.exp3_sex_summary = df.exp3_unique %>%
+  count(sex, name = "count") %>%
+  mutate(category = "Sex", 
+         variable = sex,
+         count = as.character(count)) %>% 
+  select(category, 
+         variable, 
+         count)
+
+# Summarize counts for race
+df.exp3_race_summary = df.exp3_unique %>%
+  count(race, name = "count") %>%
+  mutate(category = "Race", 
+         variable = race,
+         count = as.character(count)) %>%  
+  select(category, 
+         variable, 
+         count)
+
+# Summarize mean and SD for age
+df.exp3_age_summary = df.exp3_unique %>%
+  summarise(mean_age = mean(age, na.rm = TRUE),
+            sd_age = sd(age, na.rm = TRUE)) %>%
+  mutate(category = "Age",
+         variable = "All Participants",
+         count = str_c(round(mean_age, 2), " (", round(sd_age, 2), ")")) %>%
+  select(category, 
+         variable, 
+         count)
+
+# Combine summaries
+df.exp3_summary_table = bind_rows(df.exp3_sex_summary, 
+                                  df.exp3_race_summary, 
+                                  df.exp3_age_summary)
+
+# Print results
+kable(df.exp3_summary_table, 
+      format = "html", 
+      caption = "Demographic Summary: Sex, Race, and Age",
+      col.names = c("Category", 
+                    "Variable", 
+                    "Count / Mean (SD)"),
+      digits = 2) %>%
+  kable_styling(bootstrap_options = c("striped", 
+                                      "hover", 
+                                      "condensed"),
+                full_width = FALSE,
+                position = "center") %>%
+  column_spec(1:2, bold = TRUE) %>%
+  column_spec(3, width = "10em")
+
+```
+
+### Bayesian Model
+```{r}
+
+df.exp3_different = df.exp3 %>%
+  mutate(response_pattern = case_when(cause == 1 & purpose == 1 ~ "both",
+                                      cause == 0 & purpose == 0 ~ "neither",
+                                      TRUE ~ "different")) %>%
+  filter(response_pattern == "different") %>%
+  mutate(difference = purpose - cause,
+         difference = recode(difference, `-1` = 0),
+         condition = as_factor(condition),
+         condition = fct_relevel(condition, 
+                                 "chem",   
+                                 "bio"))
+
+# Check contrast values
+contrasts(df.exp3_different$condition)
+
+fit.brm.exp3 = brm(formula = difference ~ 1 + condition + (1 | participant) + (1 | item), 
+                   data = df.exp3_different,
+                   family = "bernoulli",
+                   seed = 1,
+                   iter = 4000,
+                   warmup = 1000,
+                   control = list(adapt_delta = .99),
+                   file = "cache/exp3") 
+
+fit.brm.exp3
+
+```
+
+#### Follow-up test
+```{r}
+
+# effect of question 
+fit.brm.exp3 %>% 
+  emmeans(spec = pairwise ~ condition, 
+          type = "response")
+
+```
+
+##### Means and Confidence Intervals
+
+###### All data
+```{r}
+
+set.seed(1)
+
+# Compute proportions and CIs by condition and response pattern
+df.exp3_summary = df.exp3 %>%
+  mutate(response_pattern = case_when(cause == 0 & purpose == 0 ~ "neither",
+                                      cause == 0 & purpose == 1 ~ "purpose only",
+                                      cause == 1 & purpose == 0 ~ "cause only",
+                                      cause == 1 & purpose == 1 ~ "both")) %>%
+  pivot_wider(names_from  = response_pattern,
+              values_from = response_pattern,
+              values_fill = 0,
+              values_fn  = ~ as.integer(any(!is.na(.x)))) %>%
+  pivot_longer(cols = c("neither", 
+                        "both", 
+                        "purpose only", 
+                        "cause only"),
+               names_to = "response_pattern",
+               values_to = "is_pattern") %>%
+  group_by(condition, 
+           item, 
+           response_pattern) %>%
+  summarise(mean = mean(is_pattern, na.rm = TRUE) * 100,  
+            ci_lower = mean_cl_normal(is_pattern)$ymin * 100,  
+            ci_upper = mean_cl_normal(is_pattern)$ymax * 100,  
+            .groups = "drop")
+
+# Print results
+kable(df.exp3_summary, format = "html", 
+      caption = "Mean Proportion and 95% CI by Response Pattern and Condition",
+      digits = 2) %>%
+  kable_styling(bootstrap_options = c("striped", 
+                                      "hover", 
+                                      "condensed"),
+                full_width = FALSE,
+                position = "center") %>%
+  column_spec(1:2, bold = TRUE) %>%
+  column_spec(3:4, width = "8em")
+
+```
+
+###### Purpose and Cause Only
+
+```{r}
+
+set.seed(1)
+
+df.exp3_different_summary = df.exp3_different %>% 
+  group_by(condition) %>% 
+  summarise(mean = mean(difference, na.rm = TRUE),
+            ci_lower = mean_cl_normal(difference)$ymin,
+            ci_upper = mean_cl_normal(difference)$ymax,
+            .groups = "drop")
+
+# Print results
+kable(df.exp3_different_summary, 
+      format = "html", 
+      caption = "Mean and 95% CI of Difference by Condition",
+      digits = 2) %>%
+  kable_styling(bootstrap_options = c("striped", 
+                                      "hover", 
+                                      "condensed"),
+                full_width = FALSE,
+                position = "center") %>%
+  column_spec(1, bold = TRUE) %>%
+  column_spec(2:4, width = "8em")
+
+```
+
+## PLOTS
+
+### Full Response Patterns
+```{r fig.height=5, fig.width=12}
+
+df.plot = df.exp3 %>%
+  mutate(response_pattern = case_when(cause == 0 & purpose == 0 ~ "neither",
+                                      cause == 0 & purpose == 1 ~ "purpose only",
+                                      cause == 1 & purpose == 0 ~ "cause only",
+                                      cause == 1 & purpose == 1 ~ "both"))  %>%
+  group_by(condition, 
+           item, 
+           response_pattern) %>%
+  summarise(n = n()) %>%
+  ungroup() %>%
+  group_by(item) %>%
+  mutate(percentage = n / sum(n) * 100) %>%
+  ungroup() %>%
+  mutate(condition = factor(condition,
+                            levels = c("bio", 
+                                       "chem"),
+                            labels = c("Biological Kinds", 
+                                       "Non-living Natural Kinds")),
+         response_pattern = factor(response_pattern,
+                                   levels = c("purpose only", 
+                                              "cause only", 
+                                              "both", 
+                                              "neither")))
+
+ggplot(data = df.plot,
+       mapping = aes(x = item,
+                     y = percentage,
+                     group = response_pattern,
+                     color = response_pattern,
+                     fill = response_pattern)) +
+  geom_col(color = "black",
+           position = position_stack(reverse = TRUE)) +
+  facet_wrap(~condition,
+             scales = "free_x") +
+  scale_fill_manual(values = c("cause only" = "#dc3410",
+                               "purpose only" = "#377EB8",
+                               "both" = "#800080",
+                               "neither" = "#000000")) +
+  scale_color_manual(values = c("cause only" = "#dc3410",
+                                "purpose only" = "#377EB8",
+                                "both" = "#800080",
+                                "neither" = "#000000")) +
+  scale_y_continuous(breaks = seq(0, 100, 25),
+                     labels = str_c(seq(0, 100, 25), "%"),
+                     expand = expansion(add = c(0, 0))) +
+  scale_x_discrete(expand = expansion(add = c(0, 0))) +
+  coord_cartesian(clip = "off") +
+  labs(y = "Response probability") +
+  theme(legend.position = "bottom",
+        legend.title = element_blank(),
+        legend.text = element_text(size = 14),
+        axis.text.y = element_text(size = 12),
+        axis.title.y = element_text(size = 16),
+        axis.text.x = element_text(size = 12),
+        axis.title.x = element_blank(),
+        strip.background = element_blank(),
+        strip.text = element_text(size = 16),
+        panel.spacing = unit(.4, "cm"))
+
+ggsave(filename = "../../figures/experiment3/exp3_plot.png", 
+       height = 5, 
+       width = 12)
+
+```
+
+# SESSION INFO
+```{r}
+
+sessionInfo()
+
+```

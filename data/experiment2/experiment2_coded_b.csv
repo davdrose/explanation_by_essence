@@ -1,0 +1,618 @@
+participant,item,explain,purpose,cause,condition,sex,race,age
+1,herons,"inherited traits from parents, these traits do not affect all offspring equally.",0,0,within,male,other / prefer not to answer,41
+1,polarbear,"inherited traits from parents, these traits do not affect all offspring equally.",0,0,within,male,other / prefer not to answer,41
+1,rabbits,inherited traits from parents.,0,0,within,male,other / prefer not to answer,41
+1,wolves,probably got the trait from their parents.,0,0,within,male,other / prefer not to answer,41
+2,herons,"again, genes would determine the size of the beaks",0,1,within,female,white / european-american,49
+2,polarbear,there are variations of white and the genes would determine that,0,1,within,female,white / european-american,49
+2,rabbits,genes would determine this i think,0,1,within,female,white / european-american,49
+2,wolves,"each wolf develops at its own pace and some of them acquire sharper teeth before the others
+",0,0,within,female,white / european-american,49
+3,herons,certain genes are activated more than others.,0,1,within,male,white / european-american,73
+3,polarbear,certain genes are activated more than others.,0,1,within,male,white / european-american,73
+3,rabbits,certain genes are activated more than others.,0,1,within,male,white / european-american,73
+3,wolves,certain genes are activated more than others.,0,1,within,male,white / european-american,73
+4,herons,"the ones with larger beaks may be bigger physically and thus, the beak size is larger in relation to their chick siblings.",0,0,within,male,white / european-american,30
+4,polarbear,"i think that is just random. since they all come from the same mother and father (presumably), it is just a random genetic trait that some have whiter fur than others.",0,1,within,male,white / european-american,30
+4,rabbits,"good question. i guess it is just genetic. just like some siblings are taller than their brothers and sisters, for whatever reason, i would assume the hairier toes are just a genetic trait.",0,1,within,male,white / european-american,30
+4,wolves,"wolves with sharper teeth probably are more ""alpha"" than the ones that don't. they might have more aggression (in the form of testosterone).",0,0,within,male,white / european-american,30
+5,herons,genetics and individuality,0,1,within,female,white / european-american,46
+5,polarbear,"i imagine it’s genetics, same as why a litter of kittens are different colors.",0,1,within,female,white / european-american,46
+5,rabbits,genetics and individuality,0,1,within,female,white / european-american,46
+5,wolves,again genetics and individuality.,0,1,within,female,white / european-american,46
+6,herons,also random genetic variations,0,1,within,male,white / european-american,20
+6,polarbear,random genetic variations,0,1,within,male,white / european-american,20
+6,rabbits,random genetic variations caused from birth,0,1,within,male,white / european-american,20
+6,wolves,"random genetic differences, basically luck.",0,1,within,male,white / european-american,20
+7,herons,some chicks have a larger beak because of their genetics.,0,1,within,male,white / european-american,53
+7,polarbear,some polar bears have whiter fur because of their genetics.,0,1,within,male,white / european-american,53
+7,rabbits,some rabbits have hairier toes because of their genetics.,0,1,within,male,white / european-american,53
+7,wolves,some wolves have sharper teeth than others because of their varying genetics.,0,1,within,male,white / european-american,53
+8,herons,different fathers.,0,0,within,male,white / european-american,44
+8,polarbear,i don't know.,0,0,within,male,white / european-american,44
+8,rabbits,their little feet get colder.,0,0,within,male,white / european-american,44
+8,wolves,they chew more.,0,0,within,male,white / european-american,44
+9,herons,genetic traits.,0,1,within,female,white / european-american,28
+9,polarbear,due to genetic traits.,0,1,within,female,white / european-american,28
+9,rabbits,differing genetic traits,0,1,within,female,white / european-american,28
+9,wolves,they are just puppy teeth. they will still fall out when their permanent teeth come in.,0,0,within,female,white / european-american,28
+10,herons,it could be males and females have different size beaks.,0,0,within,male,white / european-american,73
+10,polarbear,this could be a difference in males and females.,0,0,within,male,white / european-american,73
+10,rabbits,this could also be a difference in males and females.,0,0,within,male,white / european-american,73
+10,wolves,i think this would be by them chewing things to sharpen them.,0,0,within,male,white / european-american,73
+11,herons,"similar to before, i think this is associated with genetics over diet or behavior.",0,1,within,male,white / european-american,31
+11,polarbear,i think it is primarily related to genetics in the beginning. it could be related to diet too i guess.,0,1,within,male,white / european-american,31
+11,rabbits,i think this one is related to more genetics than the other possibilities mentioned earlier.,0,1,within,male,white / european-american,31
+11,wolves,"similar to before, either genetics or diet. i suppose sharper teeth could be related to other behavior (chewing on logs, bones, etc.).",0,1,within,male,white / european-american,31
+12,herons,"again, genetics. probably evolved to get more food and grow bigger",1,1,within,female,white / european-american,33
+12,polarbear,evolution/genetics. probably helps to reflect the sun better so they don't overheat,1,1,within,female,white / european-american,33
+12,rabbits,something with genetics? maybe they're destined to have more fur,0,1,within,female,white / european-american,33
+12,wolves,evolution/genetics. to be able to hunt and eat better and maybe even different prey,1,1,within,female,white / european-american,33
+13,herons,it might be a gene that both parents had.,0,1,within,female,white / european-american,38
+13,polarbear,it might be genetic.,0,1,within,female,white / european-american,38
+13,rabbits,it may be a recessive genetic gene.,0,1,within,female,white / european-american,38
+13,wolves,it might be a gene carried from the parents.,0,1,within,female,white / european-american,38
+14,herons,maybe one parent has that trait and the other doesn't.,0,0,within,female,white / european-american,69
+14,polarbear,maybe the texture is different or thicker others.,0,0,within,female,white / european-american,69
+14,rabbits,traits from their parents might be different than other rabbit parents.,0,0,within,female,white / european-american,69
+14,wolves,they might be developing from a different trait than other wolves with less sharp teeth,0,0,within,female,white / european-american,69
+15,herons,it's probably a dominant or recessive gene that is determined by the parents' existing genes.,0,1,within,female,white / european-american,62
+15,polarbear,it's genetics passed down from the parents but there's a possibility that the cubs could be dirty.,0,1,within,female,white / european-american,62
+15,rabbits,hairy toes on hares is determined by the combined genetics of both rabbit parents.,0,1,within,female,white / european-american,62
+15,wolves,it's genetically inherited whether the teeth are sharper or not.,0,1,within,female,white / european-american,62
+16,herons,random trait caused by evolutionary forces,0,0,within,male,white / european-american,52
+16,polarbear,random trait caused by evolutionary forces,0,0,within,male,white / european-american,52
+16,rabbits,random trait ultimately caused by evolutionary forces.,0,0,within,male,white / european-american,52
+16,wolves,random trait caused by evolutionary forces,0,0,within,male,white / european-american,52
+17,herons,normal variations in herons.,0,0,within,male,white / european-american,68
+17,polarbear,normal variations. not all animals are identical.,0,0,within,male,white / european-american,68
+17,rabbits,normal variations. some have more fur than others.,0,0,within,male,white / european-american,68
+17,wolves,normal variations in pups.,0,0,within,male,white / european-american,68
+18,herons,genetics,0,1,within,female,white / european-american,28
+18,polarbear,differing genetic traits,0,1,within,female,white / european-american,28
+18,rabbits,different genetics,0,1,within,female,white / european-american,28
+18,wolves,genetics. they are puppy teeth anyways and will fall out,0,1,within,female,white / european-american,28
+19,herons,"because of genetic variation that is passed down by the parents, some heron chicks beaks are larger than others, which can influence physical characteristics such as beak size.",0,1,within,male,white / european-american,32
+19,polarbear,"the fur of polar bear cubs varies in color, with some being cooler than others due to variations at the genetic level that determine the pigmentation of the bear fur which can also be dependent on environmental factors such as exposure to sunlight or age.",0,1,within,male,white / european-american,32
+19,rabbits,"the rabbits are born with different hairy legs, depicting a genetic hairy toe set by the parents.",0,1,within,male,white / european-american,32
+19,wolves,the structure of their teeth differs because wolves can have sharper teeth than their peers by reason of genetic diversity and selection preferring characteristics that enhance hunting and survival.,1,1,within,male,white / european-american,32
+20,herons,"again, it is genetics. it could possible be based on the gender of the chicks. perhaps the males and females have different beak shapes.",0,1,within,male,white / european-american,56
+20,polarbear,i think it is variations in the genetics coming from both parents. some cubs take after the mom and some take after the dad.,0,1,within,male,white / european-american,56
+20,rabbits,i think this is from crossing with other rabbits in nature. the traits of different rabbits have inter-mingled and the baby rabbits are showing different traits.,0,0,within,male,white / european-american,56
+20,wolves,"this is probably a trait passed down through genetics. just like people, families do not all have the same shaped teeth.",0,1,within,male,white / european-american,56
+21,herons,"they might have larger beaks due to their parents, maybe some were exposed to different nutrients when in the womb to grow larger, just like how human babies come out with different sized noses.",0,0,within,male,white / european-american,36
+21,polarbear,some polar bears might have whiter fur due to genetics. me and my sister have completely different colored hair but our mom has a shade of hair in the middle. the polar bears might also be in the sun more to whiten the fur.,0,1,within,male,white / european-american,36
+21,rabbits,the rabbits might have ate different foods to increase the hair growth. they also may have different hormone levels that make them grow different types of hair and more of it.,0,1,within,male,white / european-american,36
+21,wolves,"this may be because of genetics, or maybe the certain things they all started eating differently. the different food maybe sharpened the teeth with the way they bite down.",0,1,within,male,white / european-american,36
+22,herons,"as said previously for the rabbits, genetics plays a part in this. dating many generations back their ancestors have different genetic makeup causing this to be passed on changing generation after generation",0,1,within,male,native hawaiian / pacific islander,27
+22,polarbear,genetics probably play a part in why some polar bears have whiter fur,0,1,within,male,native hawaiian / pacific islander,27
+22,rabbits,"as said previously for the bears, genetics plays a part in this. dating many generations back their ancestors have different genetic makeup causing this.",0,1,within,male,native hawaiian / pacific islander,27
+22,wolves,"as said previously for the beaks, genetics plays a part in this. dating many generations back their ancestors have different genetic makeup, causing this, possibly due to their predator lifestyle",0,1,within,male,native hawaiian / pacific islander,27
+23,herons,it is a variance in their genes,0,1,within,female,white / european-american,53
+23,polarbear,it is a variance in their genes,0,1,within,female,white / european-american,53
+23,rabbits,it is a variance in their genes,0,1,within,female,white / european-american,53
+23,wolves,it is a variance in their genes,0,1,within,female,white / european-american,53
+24,herons,i guess it's just genetics. the dna of the chicks isn't exactly the same and some have larger beaks.,0,1,within,male,white / european-american,46
+24,polarbear,same answer. i think they have similar dna but not exactly the same.,0,1,within,male,white / european-american,46
+24,rabbits,it mas to be genetics. human siblings are not exactly the same either.,0,1,within,male,white / european-american,46
+24,wolves,the dna must be such that some have different teeth. it could be that males have sharper teeth.,0,1,within,male,white / european-american,46
+25,herons,it could be due to sex or possibly the birth size of the chick.,0,0,within,female,white / european-american,64
+25,polarbear,genetics or issues in vetro.,0,1,within,female,white / european-american,64
+25,rabbits,perhaps the sex of the rabbit,0,0,within,female,white / european-american,64
+25,wolves,genetics,0,1,within,female,white / european-american,64
+26,herons,they inherited a gene that controlled their beak size.,0,1,within,other / prefer not to answer,white / european-american,35
+26,polarbear,natural variations in genetics. some polar bears probably have more pigment in their fur and pass it along.,0,1,within,other / prefer not to answer,white / european-american,35
+26,rabbits,there was a genetic advantage to having hairier toes and it was passed on as a recessive gene.,1,1,within,other / prefer not to answer,white / european-american,35
+26,wolves,they use their teeth more.,0,0,within,other / prefer not to answer,white / european-american,35
+27,herons,genetic variation. all depending on the type of bird this may or may be detremental to the species.,0,1,within,female,white / european-american,61
+27,polarbear,genetic variations. even among identical twins there are slight changes in genes that though identical make them individuals.,0,1,within,female,white / european-american,61
+27,rabbits,genetic variation once again.,0,1,within,female,white / european-american,61
+27,wolves,"i doubt the varacity of this but  again, genetic variation.",0,1,within,female,white / european-american,61
+28,herons,i think that this has to do with the chicks genetics that they got during their birth.,0,1,within,male,white / european-american,25
+28,polarbear,some polar bears stay cleaner but also were born with a whiter coat of fur,0,0,within,male,white / european-american,25
+28,rabbits,some bunnies got genes for hairier toes,0,1,within,male,white / european-american,25
+28,wolves,i believe that this is genetic and can help describe why some wolves will have different colored fur as well.,0,1,within,male,white / european-american,25
+29,herons,natural selection,0,0,within,female,white / european-american,25
+29,polarbear,likely genetics and natural selection.,0,1,within,female,white / european-american,25
+29,rabbits,just a coincidence.,0,0,within,female,white / european-american,25
+29,wolves,just a coincidence with how their teeth grew.,0,0,within,female,white / european-american,25
+30,herons,genetic or epigenetic factors,0,1,within,male,asian / asian-american,48
+30,polarbear,genetic or epigenetic factors,0,1,within,male,asian / asian-american,48
+30,rabbits,genetic variation,0,1,within,male,asian / asian-american,48
+30,wolves,genetic or epigenetic variations,0,1,within,male,asian / asian-american,48
+31,herons,depends on genetics. perhaps the parents or grandparents passed on these traits.,0,1,within,female,white / european-american,53
+31,polarbear,their parents may have different color hair or maybe their grandparents had different color hair. it all depends on genetics and what is a dominant gene.,0,1,within,female,white / european-american,53
+31,rabbits,it would be genetics where the parents or grandparents passed on different genes to each rabbit.,0,1,within,female,white / european-american,53
+31,wolves,it could be genetics. perhaps the parents or grandparents were bred with a different animal that had different types of teeth.,0,1,within,female,white / european-american,53
+32,herons,the traits each chicks will exhibit will show up,0,0,within,female,asian / asian-american,37
+32,polarbear,their genes affect what fur they would express,0,1,within,female,asian / asian-american,37
+32,rabbits,different traits are expressed in the rabbits according to their genes.,0,1,within,female,asian / asian-american,37
+32,wolves,genes express differently in the litter of wolves,0,1,within,female,asian / asian-american,37
+33,herons,genes,0,1,within,female,white / european-american,47
+33,polarbear,genes,0,1,within,female,white / european-american,47
+33,rabbits,genes,0,1,within,female,white / european-american,47
+33,wolves,environmental factors,0,0,within,female,white / european-american,47
+34,herons,comes down to basic biology and genetics.   plus some grow at quicker rates than the others do`,0,1,within,male,white / european-american,45
+34,polarbear,this is a genetic trait that is seen all throught the animal kingdom,0,1,within,male,white / european-american,45
+34,rabbits,it depends on their genes.   not all of the litter will look exactly the same all of the time,0,1,within,male,white / european-american,45
+34,wolves,they naturally developed this way.  this is natural selection and nature will run its course!,0,0,within,male,white / european-american,45
+35,herons,herons with large beaks mate with other herons that have the same dominant gene and they can produce chicks with large beaks,0,1,within,male,asian / asian-american,45
+35,polarbear,the dominant gene in some bears is whiter than other gene pools of bears,0,1,within,male,asian / asian-american,45
+35,rabbits,having hairy rabbit toes is based on genetics.,0,1,within,male,asian / asian-american,45
+35,wolves,genetic disposition of wolves with sharper teeth are present.,0,1,within,male,asian / asian-american,45
+36,herons,genetic reasons,0,1,within,female,white / european-american,48
+36,polarbear,genetic reasons,0,1,within,female,white / european-american,48
+36,rabbits,genetic reasons,0,1,within,female,white / european-american,48
+36,wolves,genetic reasons,0,1,within,female,white / european-american,48
+37,herons,the beaks are formed differently depending on the genetics and fathers that procreated,0,1,within,male,white / european-american,38
+37,polarbear,the genes of the father and mother are passed on differently to the different polar bear cubs.,0,1,within,male,white / european-american,38
+37,rabbits,some genetics are pushed on stronger than others when it comes to a litter of rabbits,0,1,within,male,white / european-american,38
+37,wolves,i guess different genetics are based down slightly differently or there is a possibility there were two different fathers among the wolves.,0,1,within,male,white / european-american,38
+38,herons,perhaps they are male or female differences,0,0,within,female,white / european-american,50
+38,polarbear,im not sure it could be gender differences or just random.,0,0,within,female,white / european-american,50
+38,rabbits,again perhaps it is a difference in physical traits of gender,0,0,within,female,white / european-american,50
+38,wolves,perhaps its physical differences in gender.,0,0,within,female,white / european-american,50
+39,herons,some chicks develop faster than others.,0,0,within,male,white / european-american,68
+39,polarbear,i suppose it is genetics. they can be a mix of both parents.,0,1,within,male,white / european-american,68
+39,rabbits,i really have no idea.,0,0,within,male,white / european-american,68
+39,wolves,genetic predisposition.,0,1,within,male,white / european-american,68
+40,herons,probably some kind of genetics similar to humans having bigger noses than others,0,1,within,male,white / european-american,34
+40,polarbear,"similar to previous question, there are some kind of genetics at play and dna will result in variations of fur",0,1,within,male,white / european-american,34
+40,rabbits,genetics there are many differences in hair in humans as well along with any other creature,0,1,within,male,white / european-american,34
+40,wolves,"genetics as well, there will be differences in individuals from any species",0,1,within,male,white / european-american,34
+41,herons,genetics and selective breeding?,1,1,within,male,white / european-american,37
+41,polarbear,genetics again?,0,1,within,male,white / european-american,37
+41,rabbits,genetics and maybe a defect in the genes?,0,1,within,male,white / european-american,37
+41,wolves,genetics? maybe epigenetics?,0,1,within,male,white / european-american,37
+42,herons,genetic variation,0,1,within,male,white / european-american,69
+42,polarbear,genetic variation,0,1,within,male,white / european-american,69
+42,rabbits,genetic variation,0,1,within,male,white / european-american,69
+42,wolves,genetic variation,0,1,within,male,white / european-american,69
+43,herons,some may simply have better genetics or perhaps are fed more (compete better for resources),0,1,within,male,white / european-american,50
+43,polarbear,random selection,0,0,within,male,white / european-american,50
+43,rabbits,random selection,0,0,within,male,white / european-american,50
+43,wolves,random selection,0,0,within,male,white / european-american,50
+44,herons,it depends with type of food they feed on,0,0,within,female,white / european-american,35
+44,polarbear,it depends with environment they live in or found in,0,0,within,female,white / european-american,35
+44,rabbits,it depends with the type of environment they live in,0,0,within,female,white / european-american,35
+44,wolves,it depends with environment they are located and what type of food they eat,0,0,within,female,white / european-american,35
+45,herons,to help them eat different types of food better. i also think it's a natural thing.,1,0,within,male,black / african american,31
+45,polarbear,i think it's because they want stay hidden and blend in better with the snow.,1,0,within,male,black / african american,31
+45,rabbits,they probably need extra warmth and grip for hopping around in colder and slippery places.,1,0,within,male,black / african american,31
+45,wolves,i think it's because of their age.,0,0,within,male,black / african american,31
+46,herons,normal genetic variation.,0,1,within,female,white / european-american,71
+46,polarbear,normal genetic variation in fur color because cubs arose from different embryos.,0,1,within,female,white / european-american,71
+46,rabbits,normal genetic variation.,0,1,within,female,white / european-american,71
+46,wolves,normal genetic variation.,0,1,within,female,white / european-american,71
+47,herons,it is genetics. the same way some humans have longer fingers,0,1,within,male,white / european-american,58
+47,polarbear,they are young and the fur is unstained and hasn't aged,0,0,within,male,white / european-american,58
+47,rabbits,something in the genetics,0,1,within,male,white / european-american,58
+47,wolves,their genetics are slightly different.,0,1,within,male,white / european-american,58
+48,herons,"larger beaks make them better predators, it helps keep nature in balance",1,0,within,female,white / european-american,23
+48,polarbear,whiter fur probably provides better camouflage in snowy environments. genetics from the parents most likely determined the color of the fur,1,1,within,female,white / european-american,23
+48,rabbits,"perhaps rabbits with hairier toes have some sort of ecological advantage over the others, creating natural competition.",1,0,within,female,white / european-american,23
+48,wolves,natural selection most likely makes some animals stronger than others to even out the animal chain,1,0,within,female,white / european-american,23
+49,herons,"i think that some heron chicks in a litter have larger beaks than others because they have adapted to fishing in oceans and lakes and by having a larger beak, this enables the bird to fish easier and more willingly.",1,0,within,male,latino / hispanic,38
+49,polarbear,these polar bear cubs are not in the sun as long and have not spent that much time outside and therefore their fur is whiter than other polar bears fur in the group.,0,0,within,male,latino / hispanic,38
+49,rabbits,"i think that some baby rabbits are simply from a different species that adapted to a more harsh, or cooler climate and this is why they have hairier toes than other types of rabbits.",1,0,within,male,latino / hispanic,38
+49,wolves,"some of the wolf pups have sharper teeth because they are younger than the older wolves who have worn down their teeth over time and so they don't have new, sharper teeth like the younger wolves in the pact.",0,0,within,male,latino / hispanic,38
+50,herons,genetic predispositions human babies differ also.,0,1,within,female,white / european-american,67
+50,polarbear,it is in their genetic code,0,1,within,female,white / european-american,67
+50,rabbits,genetic predisposition,0,1,within,female,white / european-american,67
+50,wolves,genetic predispostion. there will be some differences between pups.,0,1,within,female,white / european-american,67
+51,herons,"genetics, based on their parents' characteristics",0,1,within,female,white / european-american,30
+51,polarbear,i think it's probably due to genetics and inheritance. it probably depends on which gene is dominant between one/both parents,0,1,within,female,white / european-american,30
+51,rabbits,"i would imagine it is a genetic quality, passed down by one or both parents.",0,1,within,female,white / european-american,30
+51,wolves,"genetics, some wolves' parents pass down their sharp teeth",0,1,within,female,white / european-american,30
+52,herons,this one is almost certainly a natural genetic variation in the same way human noses in the same family vary in shape and size.,0,1,within,male,white / european-american,52
+52,polarbear,"it's in all likelihood a genetic adaptation to environmental exposure or stimuli. or it's simply natural hue or shade variant in mammalian fur color, even monochromatic ones.",0,1,within,male,white / european-american,52
+52,rabbits,"the follicles for those hairs are more numerous and/or coded to produce thicker or longer toe hairs. again, genetics.",0,1,within,male,white / european-american,52
+52,wolves,"canid pup teeth are fairly sharp to begin with. if they are not born with exceptionally sharper teeth than average, i would say that some pups have not worn their teeth down as much as other pups while learning how to gnaw on bones and sticks.",0,0,within,male,white / european-american,52
+53,herons,it is due to genes like the rabbits.,0,1,within,female,white / european-american,60
+53,polarbear,it is due to genes. it could also be due to some cubs getting more or less nutrients in vitro. i'm not sure if fur color is affected in vitro/,0,1,within,female,white / european-american,60
+53,rabbits,"it's due to the probability of the recessive trait coming out in some of them, or the mix of genes of mom and dad rabbit.",0,1,within,female,white / european-american,60
+53,wolves,i think it is due to genes or in vitro conditions as i described in the polar bear question.,0,1,within,female,white / european-american,60
+54,herons,so they're better equipped to get things like worms when digging around,1,0,within,male,asian / asian-american,47
+54,polarbear,"genetics, mutations, survival of the fittest- easier for them to blend into the snow",1,1,within,male,asian / asian-american,47
+54,rabbits,"survival of the fittest, perhaps it's extra protection from the ground",1,0,within,male,asian / asian-american,47
+54,wolves,genetics; easier for them to eat meat,1,1,within,male,asian / asian-american,47
+55,herons,some grow bigger and faster than others,0,0,within,female,white / european-american,53
+55,polarbear,different genes,0,1,within,female,white / european-american,53
+55,rabbits,some grow faster than others,0,0,within,female,white / european-american,53
+55,wolves,some grow faster than others,0,0,within,female,white / european-american,53
+56,herons,that's how nature works,0,0,within,female,white / european-american,48
+56,polarbear,same answer. that's how nature works. different arrangement of the genes.,0,0,within,female,white / european-american,48
+56,rabbits,different outcome of the genes,0,1,within,female,white / european-american,48
+56,wolves,it's nature,0,0,within,female,white / european-american,48
+57,herons,genetics maybe not sure i wouldn't think every single chick in a litter is going to come out exactly the same.,0,1,within,male,white / european-american,29
+57,polarbear,genetics,0,1,within,male,white / european-american,29
+57,rabbits,genetics,0,1,within,male,white / european-american,29
+57,wolves,birth defects possible different mating partners.,0,0,within,male,white / european-american,29
+58,herons,"i feel like maybe gender, genetics or perhaps resources such as food being consumed more then by one then others. families sometimes stick to helping one child grow due to lack of chances by others.",0,1,within,male,asian / asian-american,36
+58,polarbear,genetics or gender. perhaps their fur will change overtime as well.,0,1,within,male,asian / asian-american,36
+58,rabbits,genetics or gender i think. perhaps they are different breeds and species of rabbit. perhaps their surroundings they need thicker fur for winter.,0,1,within,male,asian / asian-american,36
+58,wolves,guessing gender maybe genetics have them grow at different rates. maybe they get more food and their bodies grow them quicker as a result.,0,1,within,male,asian / asian-american,36
+59,herons,they are from different types of eggs,0,0,within,female,white / european-american,56
+59,polarbear,because they are a different bread,0,0,within,female,white / european-american,56
+59,rabbits,due to mutation,0,0,within,female,white / european-american,56
+59,wolves,they could have different genes making their teeth different,0,1,within,female,white / european-american,56
+60,herons,maybe there are differences between male vs female or just natural variation or more inheritance from one parent or the other.,0,1,within,male,white / european-american,35
+60,polarbear,"genetics, diet.",0,1,within,male,white / european-american,35
+60,rabbits,"genetics, grooming habits, movement.",0,1,within,male,white / european-american,35
+60,wolves,"genetics, diet/behavior differences.",0,1,within,male,white / european-american,35
+61,herons,genetic diversity,0,1,within,other / prefer not to answer,other / prefer not to answer,28
+61,polarbear,natural selection,0,0,within,other / prefer not to answer,other / prefer not to answer,28
+61,rabbits,genetic adaptation,0,1,within,other / prefer not to answer,other / prefer not to answer,28
+61,wolves,to make them more fearsome predators,1,0,within,other / prefer not to answer,other / prefer not to answer,28
+62,herons,just differences among the litter,0,0,within,female,white / european-american,34
+62,polarbear,"they're just born that way, similar to a litter of puppies who don't all come out the same color. i'm unsure of why though for that either.",0,0,within,female,white / european-american,34
+62,rabbits,i think maybe it's just genetics? maybe it's a luck of the draw situation.,0,1,within,female,white / european-american,34
+62,wolves,they're just different among the litter. maybe a recessive gene or something,0,1,within,female,white / european-american,34
+63,herons,some heron chicks are born with larger beaks than others,0,0,within,female,white / european-american,31
+63,polarbear,some polar bear cubs have fur that is whiter than others when born.,0,0,within,female,white / european-american,31
+63,rabbits,when they are born some babies have hairier toes than others.,0,0,within,female,white / european-american,31
+63,wolves,some pups in a litter of wolves have sharper teeth than others.,0,0,within,female,white / european-american,31
+64,herons,"some chicks have bigger beaks than others like how people are taller then each other, just random differences.",0,0,within,male,latino / hispanic,21
+64,polarbear,"just like people have differences with skin color , polar bears have theirs too. it can be due to genes and other environmental situation",0,1,within,male,latino / hispanic,21
+64,rabbits,"just like people have differences with with hair and other parts of the body, rabbits have theirs too.",0,0,within,male,latino / hispanic,21
+64,wolves,"just like people have differences with teeth, wolves have theirs too. it can be due to genes and other environmental situation, small differences just happen.",0,1,within,male,latino / hispanic,21
+65,herons,some chicks may have hatched earlier than the rest,0,0,within,male,white / european-american,31
+65,polarbear,they have genetic variations,0,1,within,male,white / european-american,31
+65,rabbits,genetic composition varies from one rabbit to another. environmental adaptation also matters.,0,1,within,male,white / european-american,31
+65,wolves,differences in age may result to the same,0,0,within,male,white / european-american,31
+66,herons,because they do not all have to be the same,0,0,within,female,white / european-american,55
+66,polarbear,because they do not all have to be the same,0,0,within,female,white / european-american,55
+66,rabbits,because they do not all have to be the same,0,0,within,female,white / european-american,55
+66,wolves,because not every wolf has to be exactly the same,0,0,within,female,white / european-american,55
+67,herons,i think that having a larger or smaller beak is determined by nature.,0,0,within,female,white / european-american,58
+67,polarbear,i think genetics can really give meaning to this phenomenon.,0,1,within,female,white / european-american,58
+67,rabbits,i believe genetics can explain this as well.,0,1,within,female,white / european-american,58
+67,wolves,i think this is just by nature.,0,0,within,female,white / european-american,58
+68,herons,i believe that as chicks get older their beaks get larger.,0,0,within,female,black / african american,51
+68,polarbear,i believe some polar bears have whiter fur because as they get older their fur gets whiter.,0,0,within,female,black / african american,51
+68,rabbits,as the rabbits get older their toes get hairier.,0,0,within,female,black / african american,51
+68,wolves,"i think as wolves get older their teeth eat sharper, which would explain why some wolves teeth are sharper then others.",0,0,within,female,black / african american,51
+69,herons,genetic difference,0,1,within,male,white / european-american,44
+69,polarbear,genetics,0,1,within,male,white / european-american,44
+69,rabbits,genetic variations,0,1,within,male,white / european-american,44
+69,wolves,genetics or nutriton,0,1,within,male,white / european-american,44
+70,herons,genetic diversity.,0,1,within,male,white / european-american,58
+70,polarbear,genetics will often show different characteristics in genetic offspring.,0,1,within,male,white / european-american,58
+70,rabbits,genetic diversity.,0,1,within,male,white / european-american,58
+70,wolves,genetics plays a big role in individual characteristics.,0,1,within,male,white / european-american,58
+71,herons,it may be due to development factors that they get more food from parents early on so impact the rapid growth of beaks with respect to others.,0,0,within,male,asian / asian-american,37
+71,polarbear,its depend on generics and environmental effects. this impact on the brightness of fur.,0,1,within,male,asian / asian-american,37
+71,rabbits,it is due to inherited like genes from their parents who have hairier on the toes.,0,1,within,male,asian / asian-american,37
+71,wolves,some pups have strong genes that make sharper teeth than other wolves in the same age.,0,1,within,male,asian / asian-american,37
+72,herons,i think beaks determine the type of food they eat and their diet.,0,0,within,female,white / european-american,36
+72,polarbear,i think fur color is because of location where the bears live.,0,0,within,female,white / european-american,36
+72,rabbits,dna,0,1,within,female,white / european-american,36
+72,wolves,i think it is their dna and genes.,0,1,within,female,white / european-american,36
+73,herons,"evolution, genes",0,1,within,male,asian / asian-american,30
+73,polarbear,"evolution, genes",0,1,within,male,asian / asian-american,30
+73,rabbits,"evolution, genes",0,1,within,male,asian / asian-american,30
+73,wolves,"evolution, genes",0,1,within,male,asian / asian-american,30
+74,herons,how they eat food and what they have to do to get the food.,1,0,between,male,asian / asian-american,28
+74,polarbear,different environment so there furs are different.,0,0,between,male,asian / asian-american,28
+74,rabbits,how much fur they have and the environment they are in.,0,0,between,male,asian / asian-american,28
+74,wolves,wolves need sharper teeth for the food they hunt and eat.,1,0,between,male,asian / asian-american,28
+75,herons,herons need larger beaks for eating fish,1,0,between,male,white / european-american,41
+75,polarbear,to help stay warmer in the winter,1,0,between,male,white / european-american,41
+75,rabbits,rabbits need more protection and warmth for their toes than raccoons.,1,0,between,male,white / european-american,41
+75,wolves,wolves need sharper teeth for eating their larger prey,1,0,between,male,white / european-american,41
+76,herons,they are larger birds,0,0,between,female,white / european-american,34
+76,polarbear,their genes are different,0,1,between,female,white / european-american,34
+76,rabbits,adaption to their environment is different.,1,0,between,female,white / european-american,34
+76,wolves,they are carnivores,1,0,between,female,white / european-american,34
+77,herons,to better get the fish out of the water.  robins don't need long beaks to get bugs and worms.,1,0,between,male,white / european-american,49
+77,polarbear,to reflect the sunlight at the north pole off of their skin.,1,0,between,male,white / european-american,49
+77,rabbits,to leave their scent behind better at their burrows for the young bunnies,1,0,between,male,white / european-american,49
+77,wolves,their prey requires stronger and sharper teeth to break through bones.  groundhogs do not need them to eat their food which is primarily vegetation.,1,0,between,male,white / european-american,49
+78,herons,herons probably evolved larger beaks than robins in order to facilitate eating different kinds of foods.,1,0,between,male,white / european-american,45
+78,polarbear,"polar bears live in a snowy environment, and their white fur helps them to blend in.",1,0,between,male,white / european-american,45
+78,rabbits,"rabbits tend to live in a wider variety of environments, including much colder environments, than raccoons. they may have evolved to have better covering on their toes to protect them from the elements.",1,0,between,male,white / european-american,45
+78,wolves,wolves have sharper teeth because they eat meat and they need sharp teeth to tear and chew it.,1,0,between,male,white / european-american,45
+79,herons,herons get their food from the water at different depths/,0,0,between,male,white / european-american,43
+79,polarbear,their location and climate.,0,0,between,male,white / european-american,43
+79,rabbits,raccoons have sharper thinner toes for climbing.,1,0,between,male,white / european-american,43
+79,wolves,wolves eat more meat.,1,0,between,male,white / european-american,43
+80,herons,for getting fish?,1,0,between,male,white / european-american,51
+80,polarbear,to blend in with its environment.,1,0,between,male,white / european-american,51
+80,rabbits,dealing with weather,1,0,between,male,white / european-american,51
+80,wolves,diet,0,0,between,male,white / european-american,51
+81,herons,evolutionary need,1,0,between,male,white / european-american,38
+81,polarbear,evolutionary need,1,0,between,male,white / european-american,38
+81,rabbits,evolutionary need,1,0,between,male,white / european-american,38
+81,wolves,evolutionary need,1,0,between,male,white / european-american,38
+82,herons,they probably use their beaks as tools more then robins or need bigger mouths.,1,0,between,male,american indian / alaska native,31
+82,polarbear,"i think tho blend in with their environment, also to reflect the sun.",1,0,between,male,american indian / alaska native,31
+82,rabbits,"maybe because rabbits tend to hop more than run like raccoons, so they need more hair on their feet for that.",1,0,between,male,american indian / alaska native,31
+82,wolves,wolves are carnivores and need sharper teeth to eat their pray.,1,0,between,male,american indian / alaska native,31
+83,herons,"herons have larger beaks because they catch and eat bigger prey
+",1,0,between,male,black / african american,46
+83,polarbear,"polar bears have whiter fur to blend in with the snowy arctic environment for camouflage.
+",1,0,between,male,black / african american,46
+83,rabbits,"rabbits have hairier toes to stay warm and protect their feet in colder or rough environments.
+",1,0,between,male,black / african american,46
+83,wolves,"wolves have sharper teeth because they are predators and need them to catch and eat meat.
+",1,0,between,male,black / african american,46
+84,herons,they need it to fish,1,0,between,female,white / european-american,34
+84,polarbear,they need to blend into their surroundings in arctic regions in order to hunt and prey on their food sources,1,0,between,female,white / european-american,34
+84,rabbits,i'm assuming it's for the protection of their feet from the natural elements due to being so low to the ground,1,0,between,female,white / european-american,34
+84,wolves,they need it to hunt and eat their prey for food,1,0,between,female,white / european-american,34
+85,herons,herons eat fish while robins eat worms and seeds and fruit,1,0,between,male,black / african american,49
+85,polarbear,it helps them to hunt in the artic snow,1,0,between,male,black / african american,49
+85,rabbits,they are more active in the winter times,0,0,between,male,black / african american,49
+85,wolves,they are carnivores while groundhogs are plant eaters,1,0,between,male,black / african american,49
+86,herons,they are wading birds and eat fish,1,0,between,female,white / european-american,29
+86,polarbear,evolutionary trait to blend into surroundings? idk,1,0,between,female,white / european-american,29
+86,rabbits,"i have no idea, because raccoons are scavengers",1,0,between,female,white / european-american,29
+86,wolves,they are predators and need the teeth to scare off/bite into meat,1,0,between,female,white / european-american,29
+87,herons,herons need to dip their beaks into water to catch fish.,1,0,between,female,white / european-american,31
+87,polarbear,"polar bears survive by blending into their white environment,",1,0,between,female,white / european-american,31
+87,rabbits,i do not know,0,0,between,female,white / european-american,31
+87,wolves,wolves need to catch and eat their prey.,1,0,between,female,white / european-american,31
+88,herons,god created herons with larger beaks for the type of food they eat and the type of hunting they do.,1,0,between,male,white / european-american,53
+88,polarbear,god created polar bears with white fur to help them blend in with their surroundings in order to be more successful hunters.,1,0,between,male,white / european-american,53
+88,rabbits,i have no idea why rabbits have hairier toes than raccoons. perhaps a hobbit helped draw up the plans for rabbits?,0,0,between,male,white / european-american,53
+88,wolves,"wolves have a carnivorous diet, therefore god created them with sharper teeth than groundhogs, who are (to my knowledge) vegetarian.",1,0,between,male,white / european-american,53
+89,herons,herons are a larger species of birds and eat bigger things than robins do. they evolved having larger beaks.,1,0,between,male,latino / hispanic,37
+89,polarbear,polar bears have white fur to blend in with its surroundings which is mostly white. grizzlys are darker as their surroundings are darker.,1,0,between,male,latino / hispanic,37
+89,rabbits,"racoons use their toes to grab onto objects, rabbits do not. racoons evolved such that they have an easier time holding onto things.",1,0,between,male,latino / hispanic,37
+89,wolves,wolves eat other animals and need sharper teeth to tear through flesh and mean. groundhogs eat plants and need flatter teeth to crush their food.,1,0,between,male,latino / hispanic,37
+90,herons,because they eat a particular thing that requires a longer beak to reach,1,0,between,male,white / european-american,37
+90,polarbear,it helps them blend into their surroundings and hunt their food,1,0,between,male,white / european-american,37
+90,rabbits,because they spend more time on the ground and need the extra fur to survive the cold,1,0,between,male,white / european-american,37
+90,wolves,because wolves are carnivores and need sharper teeth to properly eat,1,0,between,male,white / european-american,37
+91,herons,"herons use their beaks to get fish out of the water. they need a larger beak to do this. robins survive on nuts, grains and small insects, to they don't need such a big beak.",1,0,between,other / prefer not to answer,white / european-american,42
+91,polarbear,"polar bears have whiter hair than grizzly bears because they live in colder, brighter  climates. this means that there is more light and snow where they live, so the lighter fur allows them to blend into their environment better. the same goes for grizzly bears as they are usually found in more wooded terrain.",1,0,between,other / prefer not to answer,white / european-american,42
+91,rabbits,rabbits have hairier toes than raccoons because they need the hair to help detect vibrations of incoming predators. raccoons are predators so they are not so focused on running away.,1,0,between,other / prefer not to answer,white / european-american,42
+91,wolves,wolves are predators and also carnivores. they need sharp teeth to eat meat and also to hunt their prey.,1,0,between,other / prefer not to answer,white / european-american,42
+92,herons,their hunting for food is different than robins.,1,0,between,female,white / european-american,54
+92,polarbear,to be able to hide and blend in. camoflage.,1,0,between,female,white / european-american,54
+92,rabbits,evolution,0,0,between,female,white / european-american,54
+92,wolves,how they hunt and process food.,1,0,between,female,white / european-american,54
+93,herons,herons use their long beaks to poke fish.,1,0,between,female,white / european-american,52
+93,polarbear,the white fur camouflages them from prey so they can hunt better in the snow.,1,0,between,female,white / european-american,52
+93,rabbits,"maybe because they need them to keep their feet protected when hopping, the fur acts as a protective layer",1,0,between,female,white / european-american,52
+93,wolves,because wolves are meat eaters and groundhogs eat bugs. wolves need sharp teeth for cutting meat.,1,0,between,female,white / european-american,52
+94,herons,robins are small songbirds that hop around in the grass. herons go sticking their beaks in water for food.,1,0,between,male,white / european-american,26
+94,polarbear,polar bears live in snowy environments and can approach prey more successfully with camouflage. grizzly bears live in more arboreal environments.,1,0,between,male,white / european-american,26
+94,rabbits,i don't know.,0,0,between,male,white / european-american,26
+94,wolves,groundhogs usually eat plants. wolves are carnivores.,1,0,between,male,white / european-american,26
+95,herons,because herons are bigger birds.,0,0,between,female,white / european-american,59
+95,polarbear,i think it has to do with where they are located on the map.,0,0,between,female,white / european-american,59
+95,rabbits,they hop around and need more protection due to impacts of how they move.,1,0,between,female,white / european-american,59
+95,wolves,wolves are carnivores and hunters.,1,0,between,female,white / european-american,59
+96,herons,herons are larger in general!  they need a bigger beak to eat bigger food.,1,0,between,female,white / european-american,61
+96,polarbear,polar bears have whiter fur because they live in snowy white areas.  camouflage.,1,0,between,female,white / european-american,61
+96,rabbits,rabbits do not use their toes as much as raccoons.  rabbits do not climb.,1,0,between,female,white / european-american,61
+96,wolves,wolves need sharper teeth because they are carnivores eating large prey.,1,0,between,female,white / european-american,61
+97,herons,because they are more adapt for getting their food with their beaks. they use it more in a predator aspect,1,0,between,female,asian / asian-american,27
+97,polarbear,i think this is for survival. they live in different climates than grizzly bears and need the different fur to adapt.,1,0,between,female,asian / asian-american,27
+97,rabbits,i think it's because they have more sensitivity in their toes than raccoons.,0,0,between,female,asian / asian-american,27
+97,wolves,"because of what they eat. they also use it to capture their prey and also based off of the hunting cycle. they also use it as a defense mechanism. also, i think it's just the survival of the fittest mindset.",1,0,between,female,asian / asian-american,27
+98,herons,herons need larger beaks for the food they eat making it easier on them.,1,0,between,female,white / european-american,37
+98,polarbear,the fur helps them camouflage with their snowy environment.,1,0,between,female,white / european-american,37
+98,rabbits,rabbits hop and need extra cushioning for their wherabouts.,1,0,between,female,white / european-american,37
+98,wolves,wolves are predators and need sharper teeth for the food they consume.,1,0,between,female,white / european-american,37
+99,herons,"to eat creatures that are larger in size, like fish.",1,0,between,female,white / european-american,56
+99,polarbear,adaptation to the environment and camouflage.,1,0,between,female,white / european-american,56
+99,rabbits,they genetically have thicker fur than raccoons.,0,1,between,female,white / european-american,56
+99,wolves,wolves are carnivores and developed sharper teeth to bite meat more effectively.,1,0,between,female,white / european-american,56
+100,herons,herons hunt in the water and need to make quick jabs downward in the water to find prey.,1,0,between,other / prefer not to answer,other / prefer not to answer,36
+100,polarbear,polar bears need to blend in with their snowy environment,1,0,between,other / prefer not to answer,other / prefer not to answer,36
+100,rabbits,perhaps because rabbits do not need dexterity in the same way that raccoons do,1,0,between,other / prefer not to answer,other / prefer not to answer,36
+100,wolves,wolves hunt and eat meat which would explain the need for sharper teeth. groundhogs eat vegetation.,1,0,between,other / prefer not to answer,other / prefer not to answer,36
+101,herons,herons need the large beaks to catch fish.,1,0,between,female,white / european-american,NA
+101,polarbear,polar bears need to camouflage themselves in their environment.,1,0,between,female,white / european-american,NA
+101,rabbits,rabbits do not use their toes to feed themselves.,1,0,between,female,white / european-american,NA
+101,wolves,wolves need sharper teeth because they are carnivores.,1,0,between,female,white / european-american,NA
+102,herons,herons eat fish and need a bigger beak to catch and eat them. robins eat worms and don't need a big beak.,1,0,between,female,white / european-american,55
+102,polarbear,the environment polar bears are in has more snow so their fur matches that.,1,0,between,female,white / european-american,55
+102,rabbits,raccoons may need to climb but rabbits are ground creatures. raccoons also use their hands/feet to eat where as rabbits only use their mouths.,1,0,between,female,white / european-american,55
+102,wolves,wolves hunt bigger animals and need the teeth to eat them.,1,0,between,female,white / european-american,55
+103,herons,herons need long beaks for catching fish.,1,0,between,male,white / european-american,46
+103,polarbear,"polar bears' white fur helps them blend in with the polar environment, making it easier to catch prey.",1,0,between,male,white / european-american,46
+103,rabbits,the hair protects their feet when they run.,1,0,between,male,white / european-american,46
+103,wolves,wolves are predators and need sharp teeth for hunting and eating flesh.,1,0,between,male,white / european-american,46
+104,herons,they are just born and naturally develop larger beaks than a robin,0,0,between,female,black / african american,53
+104,polarbear,they live in snowier areas and it helps to blend in to surroundings.,1,0,between,female,black / african american,53
+104,rabbits,it is just something that they have natually more of.,0,0,between,female,black / african american,53
+104,wolves,wolves have to hunt/survive differently than groundhog so they need sharper teeth.,1,0,between,female,black / african american,53
+105,herons,they may be bigger birds,0,0,between,female,white / european-american,24
+105,polarbear,the environment they live in is snowy so white fur helps them blend in more,1,0,between,female,white / european-american,24
+105,rabbits,im not sure,0,0,between,female,white / european-american,24
+105,wolves,for eating meat,1,0,between,female,white / european-american,24
+106,herons,becasue of the food they eat and the way they need to hunt for it.,1,0,between,female,white / european-american,33
+106,polarbear,their environment is snowy so white fur makes it easier to blend in.,1,0,between,female,white / european-american,33
+106,rabbits,they don't need to use their feet as much in order to scavenge for food.,1,0,between,female,white / european-american,33
+106,wolves,"wolves are carnivores, so they need to be able to kill and rip into the flesh they're eating.",1,0,between,female,white / european-american,33
+107,herons,herons eat fish and robins probably just eat bugs,0,0,between,female,white / european-american,30
+107,polarbear,so they can blend in with the snow where they live,1,0,between,female,white / european-american,30
+107,rabbits,"rabbits live in grass, raccoons are more wild and need to fight",1,0,between,female,white / european-american,30
+107,wolves,groundhogs don't eat meat or hunt like a wolf does,1,0,between,female,white / european-american,30
+108,herons,to grab fish out of the sea,1,0,between,female,white / european-american,43
+108,polarbear,they can blend into their surroundings,1,0,between,female,white / european-american,43
+108,rabbits,it makes them jump higher,0,0,between,female,white / european-american,43
+108,wolves,they need the teeth to hunt,1,0,between,female,white / european-american,43
+109,herons,herons need longer and larger beaks to fish with.,1,0,between,female,white / european-american,67
+109,polarbear,polar bears live in the snow and white fur is a camouflage?,1,0,between,female,white / european-american,67
+109,rabbits,never thought about that. maybe because rabbits have little body fat and need more hair?,1,0,between,female,white / european-american,67
+109,wolves,wolves eat meat and need sharp teeth to get the meat off the animal they killed.,1,0,between,female,white / european-american,67
+110,herons,the birds specific needs and evolution.,1,0,between,male,white / european-american,49
+110,polarbear,so they blend into their surrounding environment making them more effective hunters.,1,0,between,male,white / european-american,49
+110,rabbits,rabbits need more hair to stay warm.,1,0,between,male,white / european-american,49
+110,wolves,wolves are predators and require sharp teeth to survive.,1,0,between,male,white / european-american,49
+111,herons,"herons have big beaks because they catch big fish and larger food, and the robins eat small insects and berries thats why they are smaller beaks.",1,0,between,male,latino / hispanic,35
+111,polarbear,polar bears have whiter fur so it helps them blend into the snow and sneak up on their food and prey,1,0,between,male,latino / hispanic,35
+111,rabbits,rabbits might have hairier toes to help keep their feet warm?  when they move through dirt and cold places.,1,0,between,male,latino / hispanic,35
+111,wolves,"wolves have sharper teeth because they tear and shred the meat they eat, but the groundhogs eat simple things like plants.",1,0,between,male,latino / hispanic,35
+112,herons,they need it to catch fish so they have larger beaks,1,0,between,female,asian / asian-american,43
+112,polarbear,maybe their environment on the snow makes them need white fur to reflect the sun,1,0,between,female,asian / asian-american,43
+112,rabbits,maybe they live in colder weather and need protection on their feet,1,0,between,female,asian / asian-american,43
+112,wolves,wolves are predators and need it for hunting,1,0,between,female,asian / asian-american,43
+113,herons,they have longer bodies and eat from water. robins ae small and eat from my yard,0,0,between,female,white / european-american,51
+113,polarbear,it is part of the camouflage against predators they match the snow and ice,1,0,between,female,white / european-american,51
+113,rabbits,because they are closer to the ground and in the winter they need to keep their feet warmer,1,0,between,female,white / european-american,51
+113,wolves,wolves eat meat and need bigger teeth as a carnivore over a groundhog herbivore,1,0,between,female,white / european-american,51
+114,herons,they need to capture fish,1,0,between,female,black / african american,33
+114,polarbear,they are less exposed to the sun,1,0,between,female,black / african american,33
+114,rabbits,to protect them from the environment,1,0,between,female,black / african american,33
+114,wolves,"their diets are different, they eat more meat",0,0,between,female,black / african american,33
+115,herons,i guess so they can hold their food better.,1,0,between,female,white / european-american,47
+115,polarbear,i guess to blend in with the snow and ice.,1,0,between,female,white / european-american,47
+115,rabbits,i think its because rabbits are more furrier than raccoons.,0,0,between,female,white / european-american,47
+115,wolves,"honestly, i believe that is the way god made them. i am assuming their teeth are sharper because they eat stuff that may sharpen them.",0,0,between,female,white / european-american,47
+116,herons,herons are larger birds and they eat larger prey. they need to catch their meals in their long beaks because they have longer necks and legs so they need longer beaks to touch the ground,1,0,between,female,white / european-american,31
+116,polarbear,polar bears have white fur so that their color blends in with the ice to elude being prey,1,0,between,female,white / european-american,31
+116,rabbits,rabbits have hairy toes so that their paws stay warm. they are mainly outside and they require that their feet stay warm,1,0,between,female,white / european-american,31
+116,wolves,wolves eat the types of food that needs to be torn and shredded. sharp teeth assist in this task,1,0,between,female,white / european-american,31
+117,herons,"because they hunt and consume larger prey, such fish, which need a longer, stronger beak to grasp and hold, herons have larger beaks than robins.  robins only require smaller beaks for pecking and plucking since they consume smaller foods like berries and insects.",1,0,between,female,white / european-american,54
+117,polarbear,"in order to better blend in with their icy, arctic habitat, polar bears have whiter fur than grizzly bears.  in their frigid environment, this camouflage gives them an evolutionary edge by making it simpler for them to hunt and evade prey detection.",1,0,between,female,white / european-american,54
+117,rabbits,"since many rabbits live in colder, open environments, the extra fur helps insulate and keep their feet warm, which is why rabbits have hairier toes than raccoons.  when traveling over soft or uneven terrain, such as grass, dirt, or snow, the fur also offers protection and traction.",1,0,between,female,white / european-american,54
+117,wolves,"since wolves are carnivores that depend on hunting and consuming meat, which calls for sharp teeth to rip flesh, their teeth are sharper than groundhogs'.  as herbivores that primarily consume plants, groundhogs require flat teeth for chewing vegetation rather than sharp ones for slicing meat.",1,0,between,female,white / european-american,54
+118,herons,herons need longer beaks to catch fish. robins don't eat fish.,1,0,between,female,white / european-american,57
+118,polarbear,because they live in the arctic and have adapted to have white fur to blend into their surroundings so that they can hunt.,1,0,between,female,white / european-american,57
+118,rabbits,because rabbits feet are used differently than raccoons and they need fur on them,1,0,between,female,white / european-american,57
+118,wolves,because groundhogs are herbivores and don't need sharp teeth like wolves do to eat meat.,1,0,between,female,white / european-american,57
+119,herons,they eat different things.,0,0,between,female,white / european-american,51
+119,polarbear,because they live in different places.,0,0,between,female,white / european-american,51
+119,rabbits,because raccoons use their paws likr hands.,1,0,between,female,white / european-american,51
+119,wolves,they consume different diets.,0,0,between,female,white / european-american,51
+120,herons,for hunting fish,1,0,between,female,white / european-american,49
+120,polarbear,for their habitat,1,0,between,female,white / european-american,49
+120,rabbits,raccoons need their toes exposed to climb,1,0,between,female,white / european-american,49
+120,wolves,eat larger prey,0,0,between,female,white / european-american,49
+121,herons,i think heron's eat fish and robin's eat bugs and worms,0,0,between,male,white / european-american,52
+121,polarbear,to blend into their surroundings,1,0,between,male,white / european-american,52
+121,rabbits,to protect their feet while running through brush,1,0,between,male,white / european-american,52
+121,wolves,evolution. wolves need sharper teeth to tear at their prey,1,0,between,male,white / european-american,52
+122,herons,because herons tend to eat fish and need the longer beak to get their food.,1,0,between,female,white / european-american,54
+122,polarbear,because polar bears live in an environment that is frozen and white.,0,0,between,female,white / european-american,54
+122,rabbits,to muffle the sound that they make to hide where they are located.,1,0,between,female,white / european-american,54
+122,wolves,because wolves are predators and eat other animals.,1,0,between,female,white / european-american,54
+123,herons,herons eat fish which are bigger than the worms that robins eat.,1,0,between,female,white / european-american,54
+123,polarbear,it's a natural camouflage. polar bears who could blend in survived more than ones that couldn't and they passed down the genes to their offspring.,1,0,between,female,white / european-american,54
+123,rabbits,they are in colder climates?,0,0,between,female,white / european-american,54
+123,wolves,wolves eat bigger prey than groundhogs and are higher on the food chain.,0,0,between,female,white / european-american,54
+124,herons,herons catch fish and other pray in water and have evolved larger beaks,1,0,between,male,white / european-american,75
+124,polarbear,they have evolved whiter fur to blend in to their environment,1,0,between,male,white / european-american,75
+124,rabbits,"a raccoons toes are more like hands, so hair probably wares off.",0,0,between,male,white / european-american,75
+124,wolves,wolves are meat eaters and evolved sharper teeth,1,0,between,male,white / european-american,75
+125,herons,herons have evolved to eat fish in the water and to do so need larger beaks,1,0,between,male,white / european-american,63
+125,polarbear,polar bears have evolved to match their arctic ice cold white environment; grizzlies evolved in a different environment that is not white,1,0,between,male,white / european-american,63
+125,rabbits,"rabbit fur has evolved for a special need,just as raccoons, one is prey and one is a scavenger, they have evolved differently",1,0,between,male,white / european-american,63
+125,wolves,"again, evoluion for diff needs.  wolves are a predator that kill and tear flesh from animals and so need sharp teeth.  groundhogs have evolved for different needs",1,0,between,male,white / european-american,63
+126,herons,they are bigger than robins.,0,0,between,male,white / european-american,35
+126,polarbear,the fur helps the polar bears blend in with the ice and snow.,1,0,between,male,white / european-american,35
+126,rabbits,it helps protect their feet for debris since they jump to travel.,1,0,between,male,white / european-american,35
+126,wolves,wolves go after prey and eat more meat.,0,0,between,male,white / european-american,35
+127,herons,"i feel they eat a different meal , while herons eat bigger catch , robins feeds on smaller insects",0,0,between,female,white / european-american,48
+127,polarbear,"polar bears lives in colder places , so the fur probably helps them in the snow, grizzly bears lives in the forest , it wont be neccessary",1,0,between,female,white / european-american,48
+127,rabbits,"i think the weather condition makes the hairier toes useful for them, raccoons are always in warmer places",1,0,between,female,white / european-american,48
+127,wolves,"wolves are wild and needs some harsh teeth to help them while hunting , groundhogs dont really feed on the wild",0,0,between,female,white / european-american,48
+128,herons,herons like to eat fish while robins like tiny animals like worms.,0,0,between,female,asian / asian-american,50
+128,polarbear,polar bears adapt to their environment which is the artic.,1,0,between,female,asian / asian-american,50
+128,rabbits,the difference is related to their habitat.,0,0,between,female,asian / asian-american,50
+128,wolves,wolves are carnivores. they need to hunt and eat other animals.,0,0,between,female,asian / asian-american,50
+129,herons,"herons having larger beaks to better catch their prey of choice, as opposed to robins which likely eat a different type of food source.",1,0,between,male,latino / hispanic,30
+129,polarbear,"polar bears live in colder climates and more harsher environments than grizzly bears, such as the arctic. having white fur ends up being better suited for blending in the snow, as polar bears hunt for food.",1,0,between,male,latino / hispanic,30
+129,rabbits,"rabbits live in different climates and environments where having hairier toes is more advantageous to survival, such as being more resistant to the cold.",1,0,between,male,latino / hispanic,30
+129,wolves,wolves are predators and primarily hunt and eat prey. groundhogs are herbivores and do not require sharper teeth to eat plant matter.,1,0,between,male,latino / hispanic,30
+130,herons,herons eat fish so they would need a larger beak to catch fish and to eat then where as robins eat bugs and seeds so they can get by with a smaller beak.,1,0,between,female,white / european-american,49
+130,polarbear,"i think it is because of the environment they are in, polar bears need to blend in with the snow and ice so they will have white fur and grizzlies have brown fur to blend in with the forest and trees.",1,0,between,female,white / european-american,49
+130,rabbits,i think ribbits have hairier toes because they are a prey animal and more hair will make them quieter when they walk.  raccoons scavenge and dont need to be as silent as a rabbit,1,0,between,female,white / european-american,49
+130,wolves,"wolves are predator's and eat meat, they would need sharper teeth to grind up flesh and bones, where as ground hogs eat veggies and dont need sharp teeth as much to do that.",1,0,between,female,white / european-american,49
+131,herons,herons have larger beaks than robins because they eat snails and other things that are in the ground.,1,0,between,male,white / european-american,41
+131,polarbear,it's due to genetics and the climate they live in. white fur keeps them warmer.,1,1,between,male,white / european-american,41
+131,rabbits,rabbits are on the ground more and need the hair to protect their toes more from rocks and heat on surfaces as well as to keep them warm.,1,0,between,male,white / european-american,41
+131,wolves,wolves eat meat and larger animals than groundhogs.,0,0,between,male,white / european-american,41
+132,herons,because herons are bigger than robins and need bigger beaks to eat bigger amounts of food,1,0,between,female,white / european-american,69
+132,polarbear,to help them camoflogge,1,0,between,female,white / european-american,69
+132,rabbits,to enable them to have more protection,1,0,between,female,white / european-american,69
+132,wolves,wolves eat and kill big animals,0,0,between,female,white / european-american,69
+133,herons,they eat larger creatures. robins would eat  worms and insects.,0,0,between,male,black / african american,55
+133,polarbear,to blend inwith the snow and ice.,1,0,between,male,black / african american,55
+133,rabbits,to keep it body warm.,1,0,between,male,black / african american,55
+133,wolves,to eat hunt and eat meat,1,0,between,male,black / african american,55
+134,herons,to help capture food,1,0,between,female,white / european-american,38
+134,polarbear,because they can blend into the snow they have adapted,1,0,between,female,white / european-american,38
+134,rabbits,"their lifestyle, rabbits dig through the ground?",0,0,between,female,white / european-american,38
+134,wolves,because they need to hunt,1,0,between,female,white / european-american,38
+135,herons,the herons use their long beaks to catch fish.,1,0,between,male,asian / asian-american,56
+135,polarbear,polar bears live in the ice and the white fur blends into the background.,1,0,between,male,asian / asian-american,56
+135,rabbits,rabbits stick to the ground while raccoons use their toes to climb trees.,1,0,between,male,asian / asian-american,56
+135,wolves,wolves are carnivores and use their sharp teeth to tear into their prey.,1,0,between,male,asian / asian-american,56
+136,herons,so they can fish easier since it takes a larger amount of food to feed them.,1,0,between,female,white / european-american,32
+136,polarbear,to blend in with there surroundings so they can hunt easier.,1,0,between,female,white / european-american,32
+136,rabbits,to help protect there feet while hopping and kicking.,1,0,between,female,white / european-american,32
+136,wolves,they a carnivores sharp teeth help them take down a eat there prey.,1,0,between,female,white / european-american,32
+137,herons,herons use their long beaks for fishing. its an evolutionary trait,1,0,between,male,white / european-american,29
+137,polarbear,polar bears live in snowy regions and white fur helps with camouflage,1,0,between,male,white / european-american,29
+137,rabbits,because rabbits live in colder temperatures,1,0,between,male,white / european-american,29
+137,wolves,"wolves evolved to eat meat, hence the sharp teeth",1,0,between,male,white / european-american,29
+138,herons,"because their larger beaks matches their lifestyle,diet,and hunting needs",1,0,between,male,white / european-american,59
+138,polarbear,because  they live in icy environments and need to blend into snow while grizzly bears live in darker wooded habitats,1,0,between,male,white / european-american,59
+138,rabbits,for protection they dont have foot pads like raccoons.for heat and cold insulations for those living in the cold,1,0,between,male,white / european-american,59
+138,wolves,they are carnivores who hunt and eat meat but groundhogs are plany eaters,1,0,between,male,white / european-american,59
+139,herons,the larger beak is better for catching aquatic prey,1,0,between,male,black / african american,30
+139,polarbear,it provides better camoflague for their arctic habitat,1,0,between,male,black / african american,30
+139,rabbits,raccoons have feet made for gripping instead of speed,1,0,between,male,black / african american,30
+139,wolves,wolves are carnivorous predators,1,0,between,male,black / african american,30
+140,herons,so they can catch fish easier.,1,0,between,female,white / european-american,35
+140,polarbear,so they can camouflage against white snow.,1,0,between,female,white / european-american,35
+140,rabbits,maybe for digging and burrowing?,1,0,between,female,white / european-american,35
+140,wolves,wolves are predators so they need sharper teeth to hunt prey.,1,0,between,female,white / european-american,35
+141,herons,to help them catch food.,1,0,between,male,asian / asian-american,51
+141,polarbear,to help them blend into the landscape - which is great for hunting prey.,1,0,between,male,asian / asian-american,51
+141,rabbits,"to help them blend into their environment and most importantly, it likely muffles sounds of movement to avoid being preyed upon.",1,0,between,male,asian / asian-american,51
+141,wolves,wolves are predators - so they need sharper teeth for hunting and tearing up their prey to eat.,1,0,between,male,asian / asian-american,51
+142,herons,"herons are adapted to eat larger prey such as small fish, while robins typically eat smaller prey such as bugs and worms.",1,0,between,female,white / european-american,30
+142,polarbear,"their fur is a genetic adaptation to their environment. having white fur gives polar bears camouflage in snowy conditions, while darker fur helps grizzly bears blend in the woods.",1,0,between,female,white / european-american,30
+142,rabbits,"raccoons require more dexterity in their toes for climbing and scavenging, while rabbits need more protections for their toes in the winter.",1,0,between,female,white / european-american,30
+142,wolves,"wolves are apex predators and are primarily carnivorous and require sharp teeth to hunt and eat meat, while groundhogs eat prey and food that is much easier to hunt and chew.",1,0,between,female,white / european-american,30
+143,herons,to catch things,1,0,between,male,black / african american,31
+143,polarbear,genetic makeup,0,1,between,male,black / african american,31
+143,rabbits,genetic makeup,0,1,between,male,black / african american,31
+143,wolves,for hunting,1,0,between,male,black / african american,31
+144,herons,they eat larger food,0,0,between,male,white / european-american,58
+144,polarbear,"polar bear fur is hollow, and it reflects the snow and makes it look white.",1,0,between,male,white / european-american,58
+144,rabbits,to protect them from the snow,1,0,between,male,white / european-american,58
+144,wolves,they are meat eaters and break bone with them.,1,0,between,male,white / european-american,58
+145,herons,herons eat larger food than robins such as fish while robins eat worms and grubs.,0,0,between,female,white / european-american,47
+145,polarbear,"polar bears have adapted to their snowy environment, producing white fur just as grizzly bears have darker fur to blend with their environment.",1,0,between,female,white / european-american,47
+145,rabbits,evolutionary adaptations of raccoons have made it necessary for raccoons to have smoother toes.,1,0,between,female,white / european-american,47
+145,wolves,wolves need sharp teeth to kill and tear apart their food.  groundhogs need duller teeth for their food.,1,0,between,female,white / european-american,47
+146,herons,"herons need larger beaks than robins because, unlike robins who forage on the ground for food, herons thrust their beaks into lakes and rivers to catch fish that are deeper than the surface level.",1,0,between,female,white / european-american,56
+146,polarbear,"polar bears have adapted to live in the lands of white snow and ice, so their white fur helps camouflage them in their environment. likewise, grizzly bears are colored brown to help them blend into their forested environments.",1,0,between,female,white / european-american,56
+146,rabbits,"raccoons use their toes like hands to pry open things and climb trees, while rabbits are more docile, don't climb trees, and forage for food.",1,0,between,female,white / european-american,56
+146,wolves,wolves need sharper teeth for tearing apart the flesh of the animals they kill to eat.,1,0,between,female,white / european-american,56
+147,herons,"""herons have larger beaks because they use them to catch and eat larger prey, such as fish and amphibians. a larger beak helps them stab or grasp slippery animals in the water. robins eat mostly insects and small fruits, so they don’t need large beaks.",1,0,between,male,white / european-american,51
+147,polarbear,"""polar bears have whiter fur to help them blend into their snowy and icy environment. this camouflage helps them sneak up on prey and stay hidden from threats. grizzly bears live in forests and mountains, so they don’t need white fur for survival.",1,0,between,male,white / european-american,51
+147,rabbits,"rabbits have hairier toes to protect their feet from cold and rough ground, since they often live in open grassy or snowy areas. the extra fur also helps them move quietly to avoid predators. raccoons, which live in more varied environments and use their toes for grasping, don’t need as much toe fur.",1,0,between,male,white / european-american,51
+147,wolves,"""wolves are carnivores and need sharp teeth to catch, kill, and tear the flesh of their prey. groundhogs, on the other hand, are herbivores and primarily eat plants, so they don't need sharp teeth. their teeth are adapted for chewing vegetation, not hunting.",1,0,between,male,white / european-american,51
+148,herons,herons are much bigger birds.  proportionality explains the difference.,0,0,between,female,white / european-american,52
+148,polarbear,"both bears need to be able to blend into their environment.  a polar bear lives where it's white, therefore white fur helps it to blend in and avoid predators in its environment.",1,0,between,female,white / european-american,52
+148,rabbits,rabbits don't use their feet for digging as much as a raccoon does.  hair would get in the way.,1,0,between,female,white / european-american,52
+148,wolves,wolves need to eat things that are tougher.,1,0,between,female,white / european-american,52
+149,herons,"i think that the reason is the same as the last question, nature has changed them over thousands of years for survival.",0,0,between,male,white / european-american,45
+149,polarbear,i think this has to do with cover matching the color of snow.,1,0,between,male,white / european-american,45
+149,rabbits,i think that nature has made rabbits hairier because they needed it.,1,0,between,male,white / european-american,45
+149,wolves,i think that wolves have needed sharper teeth than groundhogs for many years and nature has changed them that was over thousands of years.,1,0,between,male,white / european-american,45
+150,herons,herons have to eat more food because they are larger than robins. so herons needs more beak to body ratio so they can get enough food into their body to survive.,1,0,between,male,white / european-american,42
+150,polarbear,"um, polar bears live in the artic circle and there's a lot of snow around so if they were had dark fur like a grizzly they would stick out like a sore thumb and not be able to hunt efficiently.",1,0,between,male,white / european-american,42
+150,rabbits,rabbits live in areas which are harder and on their toes than raccoons so their toes get hairier for extra protection the racoon doesn't need.,0,0,between,male,white / european-american,42
+150,wolves,"groundhog eat grass and wolves eat meat. and meat is harder to eat than grass so you need sharper teeth. and wolve have to kill the things that are made of meat, which sharp teeths helps with as well. whereas the grass just kind of sits there.",1,0,between,male,white / european-american,42
+151,herons,not sure,0,0,between,male,white / european-american,40
+151,polarbear,warmth,1,0,between,male,white / european-american,40
+151,rabbits,because of the habitat,0,0,between,male,white / european-american,40
+151,wolves,for feeding on flesh,1,0,between,male,white / european-american,40
+152,herons,because they catch and eat fish instead of bugs and worms.,1,0,between,female,white / european-american,44
+152,polarbear,because they live in the snow and the fur color helps them blend in in their environment.,1,0,between,female,white / european-american,44
+152,rabbits,to protect them when they hop.,1,0,between,female,white / european-american,44
+152,wolves,because they are carnivores who eat animals and they need sharp teeth for survival.,1,0,between,female,white / european-american,44
+153,herons,the food they hunt require larger beaks,1,0,between,male,asian / asian-american,29
+153,polarbear,to better blend in with the snow,1,0,between,male,asian / asian-american,29
+153,rabbits,rabbits need to walk quietly,1,0,between,male,asian / asian-american,29
+153,wolves,wolves have shaper due to their hunting and eating habits requiring it,1,0,between,male,asian / asian-american,29

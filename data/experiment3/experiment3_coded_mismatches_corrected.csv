@@ -1,0 +1,210 @@
+participant,item,feature,explain,purpose_a,cause_a,purpose_b,cause_b,condition,sex,race,age,correct
+1,soil,nutrients,eaerth,0,1,0,0,chem,male,white / european-american,40,b
+4,oxygen,oxygen atoms,becuase its oxygen,0,1,0,0,chem,male,white / european-american,46,a
+5,platinum,durable,chemical makeup structure of the molecule,0,1,0,1,chem,female,asian / asian-american,27,a
+5,lead,"able to write with it, poisonous",may generate free radicals?,0,0,0,1,chem,female,asian / asian-american,27,a
+7,oxygen,oxygen is a collection of atoms that serve a function.,"man's need to objectify and name things, in order to identify them based on a set of criteria.",1,1,1,0,chem,female,white / european-american,NA,b
+9,lead,"again, the composition of it but i don't know much about lead because its been regarded as dangerous my whole life",how the earth came together at early stages made different types of rocks and elements and such,0,0,0,1,chem,male,white / european-american,39,a
+12,lead,it is dense and brittle,it is a compound that is unique and has many uses like the lead of a pencil,0,0,0,1,chem,male,white / european-american,27,b
+15,platinum,"the most important features are it's silver white color, luster, and resistance to corrosion and tarnishing. it is a rare and dense metal.",i believe it has these features because of it's density and strength.,0,0,0,1,chem,female,black / african american,44,a
+16,river,body of water,its unique structure and the reason for its creation,0,0,0,1,chem,female,asian / asian-american,34,b
+16,soil,its features and characteristics,because it's made from earth,0,1,0,0,chem,female,asian / asian-american,34,a
+17,soil,soil is rich in minerals and allow plants to grow in them.,"the rich minerals that the soil contains. without that, plants would not grow from it so easily.",1,1,0,1,chem,female,white / european-american,45,b
+18,river,water,its just what makes it up and moves,0,1,0,0,chem,female,black / african american,46,b
+21,lead,lead,because it’s made of lead .,0,1,0,0,chem,male,asian / asian-american,38,a
+22,soil,the fact that it is able to grow plants in.,"it's a mixture of various things like organic matter, water, air and dirt.",0,1,0,0,chem,male,white / european-american,31,a
+25,lead,density,the sheer density and heaviness of it. the way nature made it,0,0,0,1,chem,male,white / european-american,33,a
+26,platinum,the subatomic particles,how the atoms interact with reality,0,0,0,1,chem,male,white / european-american,32,b
+28,mineral,minerals have different properties that make it a mineral.,nature makes a mineral what it is and provides its features that are different from other elements.,0,0,0,1,chem,female,black / african american,41,a
+28,platinum,the properties that distinguish platinum from other elements make it what it is.,it is naturally occurring it has those features and other elements have different features. just as humans all have different features.,0,0,0,1,chem,female,black / african american,41,a
+28,lead,lead has unique properties that makes it what is is.,it is naturally occurring that lead has its unique properties and distinguished makeup.,0,0,0,1,chem,female,black / african american,41,a
+28,oxygen,o2 makes oxygen what it is. it is a part of the air we breathe.,it is naturally occurring for oxygen to have whatever it is that makes it up.,0,0,0,1,chem,female,black / african american,41,b
+32,soil,soil should be a composite of broken down organic materials and minerals.,it has those features because thats what decay has broken organisms down into.,0,0,0,1,chem,male,white / european-american,40,a
+33,lead,"it is dark, dense, and heavy, it can shield against radiation, and it is toxic.","that's difficult to answer without having the answer, but lead is dense and heavy maybe because it's compacted a lot and is dark probably from geothermal incubation.",0,0,0,1,chem,male,white / european-american,33,a
+34,soil,composed of dirt and able to be a place where plants can grow.,the science behind it.,1,0,0,0,chem,male,white / european-american,33,b
+35,soil,soil contains organic matter,we have life on this planet that decays into the soil when it dies,0,0,0,1,chem,female,white / european-american,51,a
+40,soil,"1. the texture 
+2. the structure","1. it determines the mineral content, texture, and chemical makeup.
+2. refers to how soil particles clump together into aggregates. good structure improves aeration, water movement, and root growth",0,0,0,1,chem,male,asian / asian-american,50,b
+40,platinum,"atomic identity
+catalytic power
+stability","resists corrosion and oxidation
+speeds up reactions without being consumed",0,0,0,1,chem,male,asian / asian-american,50,a
+42,river,"clean uncontaminated, free of pollution, full of life, drinkable.",because god intended it to be that way.,1,0,0,0,chem,female,white / european-american,29,a
+42,soil,"life giving, nutrient rich, able to bring forth fruits, vegetables, and flowers.",to bring life to the people of the earth for health and enjoyment.,1,0,0,0,chem,female,white / european-american,29,a
+42,oxygen,"water, air, ice, life, hydration, cleansing, refreshing.",this is the element that brings life.,1,0,0,0,chem,female,white / european-american,29,a
+43,soil,"texture and composition – the mixture of sand, silt, and clay, which affects how soil holds water, air, and nutrients.",natural processes like weathering of rocks create mineral particles.,0,0,0,1,chem,male,latino / hispanic,31,a
+45,mineral,the color and composition.,science principles.,0,0,0,1,chem,male,white / european-american,50,a
+45,platinum,it's composition and main elements.,science. just like biology explains why humans have their features.,0,0,0,1,chem,male,white / european-american,50,a
+45,lead,its unique density.,its stability.,0,0,0,0,chem,male,white / european-american,50,a
+47,soil,i think what its made of is the most important features,"i picked that because the different things it's made of affect what grows in it and what it can be used for. some soil can have sand, clay, plant matter, things that help make it absorbent. not to mention it can affect growth, depending on the quality too",0,0,0,1,chem,female,white / european-american,34,b
+47,oxygen,i guess if we can breathe it in or not,"it's the only thing i can think of when i think of oxygen, is can i breathe it in, or maybe more of can i breathe it in safely",0,0,1,0,chem,female,white / european-american,34,a
+48,platinum,"white-silver color, does not corode easily","platinum is strong, metal, durable because of what it is made of",0,1,0,0,chem,female,black / african american,60,a
+53,river,"the water particles, the flow of water, and the surrounding",it helps form the moving water,0,0,1,0,chem,male,american indian / alaska native,52,a
+54,soil,"the nutrient rich attribute, which allows for the growth of plant life","its dirt, its good life bringing dirt",1,0,0,0,chem,female,black / african american,46,b
+54,platinum,the shiny look of the metal and its rarity.,"the value people put on it makes platinum platinum. otherwise, it would just be a rock",1,0,0,0,chem,female,black / african american,46,a
+55,platinum,"catalytic ability
+chemical inertness","speeds up chemical reactions without being consumed, used in fuel cells, converters.
+platinum resists corrosion, oxidation, and most acids even at high temperatures",0,0,0,1,chem,male,white / european-american,50,a
+56,platinum,the fine shiny crystals.,the particles have distinct features which are not found on any other mineral.,0,0,0,1,chem,female,black / african american,33,b
+58,mineral,"over time how the minerals composition occurs naturally from the environment.   different compositions form different minerals, due to the structures of the chemicals.",occurs naturally over time one of the beauties that earth has given us.  from the chemicals to the structure of these minerals all occurs over time that taken thousands of years to form.,0,0,0,1,chem,male,white / european-american,52,b
+59,soil,minerals,broken down matter and rocks,0,1,0,0,chem,female,white / european-american,51,a
+60,soil,its chemical composition,that is how it was made and depends on the environment like water and minerals,0,0,0,1,chem,male,white / european-american,45,a
+64,mineral,"solid, naturally-occurring, not organic",it is a part of the physics of our world and we give such things labels to distinguish between different forms of matter.,0,1,0,0,chem,male,asian / asian-american,31,b
+64,lead,the number of protons in the nucleus of an atom,"again, it is product of the physics of our world (even if scientists and philosophers cannot place why physics is the way that it is--only ""how"" it is based on repeated observation).",0,1,0,0,chem,male,asian / asian-american,31,b
+67,oxygen,life,its the essential part of human existence.,1,0,0,0,chem,female,black / african american,20,a
+72,oxygen,the elements that come together to create it,i think it is created from trees that put those elements together,0,0,0,1,chem,male,white / european-american,47,a
+73,mineral,"i think the most important features that make a mineral a mineral are that it’s naturally occurring, inorganic, has a definite chemical composition, and a crystalline structure.","these features come from how minerals form — through natural geological processes like cooling magma or precipitation, which allow atoms to arrange into ordered patterns over time.",0,0,0,1,chem,female,black / african american,36,b
+73,soil,"i think the most important features that make soil soil are its mixture of minerals, organic matter, water, air, and living organisms, all working together to support plant life.","these features develop over time through weathering of rocks, decomposition of plants and animals, and the activity of microbes and roots, which break down materials and create a fertile, dynamic environment.",0,0,0,1,chem,female,black / african american,36,a
+75,platinum,"the shiny metal look, the silverish color, the properties it is made of","that is the way it looks when it is mined from the earth, as well as it's potential high melting ability",0,0,0,1,chem,female,white / european-american,44,a
+77,oxygen,"the two atoms that create o2, thus making oxygen.",the science behind it that explains how it comes to be.,0,0,0,1,chem,female,white / european-american,27,a
+78,platinum,the silvery metallic texture,because its a dense heavy metal,0,0,0,1,chem,female,other / prefer not to answer,48,a
+86,mineral,natural elements in soil that make it a certain compound.,the soil must have naturally occurring compounds that bind together to make the minerals.,0,0,0,1,chem,female,white / european-american,79,b
+91,soil,soil is made of dirt and water,it has those features to help things grow,1,0,0,0,chem,female,white / european-american,46,a
+93,lead,its nature as a heavy metal,due to its high density,0,0,0,1,chem,male,white / european-american,30,a
+93,oxygen,it's a gas.,the low densities make oxygen a gas,0,0,0,1,chem,male,white / european-american,30,a
+94,platinum,its shine and beauty.,perhaps a chemical reaction between minerals.,0,0,0,1,chem,female,white / european-american,73,b
+97,soil,soil is made up with features from dirt and minerals.,it has these features because minerals are in dirt and the plants need it to grow.,0,0,1,1,chem,female,white / european-american,35,b
+99,soil,soil is comprised of different types of rock and organic compounds that give it unique properties to make things grow.,soil can be very rich in organic compounds to help things grow or very dry causing it to not give much nutrients for things to grow.,0,0,0,1,chem,male,white / european-american,35,a
+100,oxygen,the chemical composition,the collection of atoms sets oxygen apart from all other things and if anything other was present the atoms would be described as another thing.,0,0,0,1,chem,female,white / european-american,52,b
+101,mineral,the most important features that make a mineral a mineral would be the dirt/sand/oxygen/organisms that evolve and change to create the mineral.,"i would say a mineral has dirt/sand/oxygen/organisms that evolve and change because nothing stays the same. every organism/mineral is always changing. when it rains or a leaf falls on the mineral, it's composition to what it's exposed to will degrade or add nutrients.",0,0,0,1,chem,female,white / european-american,41,b
+101,oxygen,"the most important features that make oxygen oxygen, would be it's complete ingredients that make it. i don't know exactly what makes up oxygen but maybe moisture.","when i think about what makes oxygen oxygen and why it has those features, i would have to guess and say that oxygen is made of many things and it's features of moisture help create it's feature.",0,0,0,1,chem,female,white / european-american,41,b
+102,soil,i think being able to plant things in soil and grow food and other things like trees and plants makes soil soil.,i think soil's properties of being able to grow things such as food makes soil soil.,1,0,0,1,chem,female,white / european-american,32,a
+102,lead,that you can use lead to write with. using lead for pencils is a very good invention.,"when i think of lead, i mainly think of pencils. i think being able to whittle lead down to a form to put it in a pencil and be able to write with it is one of lead's defining features.",1,0,0,0,chem,female,white / european-american,32,a
+104,soil,it needs to have a majority of sand and some dead plant matter,you need sand and dead plant matter cause that's what makes up most of it,0,0,0,1,chem,male,white / european-american,61,b
+109,lead,rock sediment,minerals and sediment,0,0,0,1,chem,female,asian / asian-american,44,b
+110,soil,dirt,so it can be used to grow plants,0,0,1,0,chem,female,white / european-american,46,b
+112,lead,the molecular structure,the ratio of one kind of molecule to another or others,0,0,0,1,chem,male,white / european-american,51,b
+112,oxygen,it relates to its atomic number which represents its protons,fusion,0,0,0,1,chem,male,white / european-american,51,a
+114,lead,combination of elements,heat,0,0,0,1,chem,male,white / european-american,75,a
+116,soil,"i will say the key things that make soil soil are that it’s a mix of broken-down rock and organic stuff, it can hold water and it supports plant life. it’s that combination of minerals, nutrients and living organisms that sets it apart from just plain dirt or sand.","soil is the way it is because of how it forms over time rocks break down into tiny particles, plants and animals add organic matter and microorganisms keep everything cycling. the mix of minerals, organic material, air and water all come together naturally, which is why soil has the structure and richness it does.",0,0,0,1,chem,male,black / african american,55,b
+118,mineral,naturally occurring in nature,"natural, hard, crystal or rock like shape",0,0,0,1,chem,female,white / european-american,33,a
+118,platinum,the chemical components of platinum,platinum has certain physical and chemical properties that are unique,0,0,0,1,chem,female,white / european-american,33,a
+119,desert,its ability to seperate areas.,divine design,1,0,0,0,chem,male,black / african american,52,a
+119,river,it's ability to move waterwhich is a necessity for most living things.,all part of a divine plan.,1,0,0,0,chem,male,black / african american,52,a
+119,soil,it's ability to store and transfer nutrients.,omniscient design,1,0,0,0,chem,male,black / african american,52,a
+119,oxygen,it aids in helping me breathe.,by omniscient design.,1,0,0,0,chem,male,black / african american,52,a
+120,platinum,has the features to be consider platinum.. like composition and then how will be use.,the minerals that when mix create the platinum.,0,0,0,1,chem,male,latino / hispanic,53,b
+122,soil,"it is malleable, absorbs water and other nutrients, and can produce plants",i have no idea why it has those features. i just know that in order for plants to grow the soil must be healthy.,0,0,1,0,chem,female,other / prefer not to answer,37,a
+125,lead,it's weight and its ability to block radiation.,it's weight and it's harmful effects of humans with prolonged exposure.,0,0,0,1,chem,male,asian / asian-american,49,a
+126,soil,the molecular components,it s a mix of a lot of chemicals that gives it its fine feeling and minerals,0,0,0,1,chem,male,white / european-american,31,b
+130,soil,"composition, texture, and ability to support life.","soil is made of organic matter, water, and air. its texture (sand, silt, clay) affects drainage and nutrients. soil also provides a medium for plants and microorganisms to grow, which is essential for life.",0,0,0,1,chem,male,asian / asian-american,56,b
+131,soil,"water, mineral content, living organisms.","plants or animals that grow, die, and decompose in soil. bacteria, fungi, worms. possibly bedrock or settlement.",0,0,0,1,chem,female,white / european-american,32,a
+135,soil,generally crumbly and can be reduced to dust/find grains with mechanical action.,i think of soil as mineral dust/grains combined with organic matter.  i'm not sure that pure clay or soapstone would be considered soil.,0,0,0,1,chem,male,white / european-american,66,b
+136,mineral,what it used to be and how it turned into a mineral,something that has broken down and left elements that it had in it.,0,0,0,1,chem,male,white / european-american,50,b
+136,soil,it is nutrient-rich and not too much rock.,"soft, organic material. years of matter breaking down and becoming soil again",0,0,0,1,chem,male,white / european-american,50,a
+139,soil,soil is minerals from rock that has b een broken down,it carries nutrients such as ntrogen for palnts to grow,0,0,1,0,chem,male,white / european-american,60,b
+142,dog,"its fur, tails, ears and face and nose and body",because its what god intended to give it when he made it,1,0,0,0,bio,male,latino / hispanic,36,a
+143,shark,the dangerous teeth of theirs.,they are one of the best predators in the ocean.,1,0,0,1,bio,male,asian / asian-american,25,a
+153,dog,"hearing, eye sight, sense of smell",genetic and cultural evolution,0,0,0,1,bio,male,white / european-american,39,a
+153,coyote,"hearing, eye sight, sense of smell",maybe genetic and cultural evolution,0,0,0,1,bio,male,white / european-american,39,a
+153,turkey,"body structure, feathering",environmental evolution adaptation,1,0,0,0,bio,male,white / european-american,39,a
+163,dog,"the tail wagging, its loyalty to humans and its bark.",god made it this way.,0,0,1,0,bio,female,white / european-american,67,a
+163,snail,the shell it has onits back.,god made it this way.,0,0,1,0,bio,female,white / european-american,67,a
+163,osprey,the sharp claws and its feathers.,god made it this way.,0,0,1,0,bio,female,white / european-american,67,a
+163,turkey,"the skin under its neck, the tail feathers and its gobble.",god made it this way.,0,0,1,0,bio,female,white / european-american,67,a
+171,dog,the eyes and the body,how they bark and they are very much domesticated,0,0,1,0,bio,male,white / european-american,45,b
+172,dog,it's that a dog has that best-friend energy!,because they have been domesticated over thousands of years.,0,0,1,0,bio,male,white / european-american,46,b
+175,bat,eyes,"so can see at night
+",0,0,1,0,bio,male,white / european-american,49,b
+175,turkey,tail feathers,makes him pretty,0,0,1,0,bio,male,white / european-american,49,b
+176,dog,a dog has a friendly demeanor. a dog has been domesticated to be man's best friend.,breeding over many generations has caused dogs to have the features they currently have.,0,0,1,0,bio,male,white / european-american,55,b
+177,snail,"its shell, its slime, its eyes on stalks.","the shell design on its back, its snail trail",0,0,1,0,bio,male,white / european-american,50,a
+177,bat,"its nocturnal, it flutters about, its partial blindness","the shape of its wings, its ability to echolocate even though its eyesight is poor",0,0,1,0,bio,male,white / european-american,50,b
+182,shark,its fins and sharp teeth.,its genetics are what makes it into a shark. it has those features to make it into a ferocious ocean hunter.,0,1,1,1,bio,male,white / european-american,31,b
+185,dog,a dogs face with its attentive and inquisitive nature defines most dogs.,i think a dogs face relays a desire to interact with people.,0,0,1,0,bio,male,black / african american,71,a
+185,osprey,i think the talons make this bird stand out.,this is not a sparrow. the talons indicate this is a bird of prey,0,0,1,0,bio,male,black / african american,71,a
+185,shark,its aggressive teeth.,"the shark has an aerodynamic shape and even in the picture above looks, like a rocket with teeth.",0,0,1,0,bio,male,black / african american,71,a
+185,turkey,the bird has a distinctive red neck. it also make a unique sound that many easily recognize.,sadly for the turkey its red neck and unique sound remind people of food.,0,0,1,0,bio,male,black / african american,71,a
+186,shark,cartilaginous skeleton,"unlike bony fish, sharks have skeletons made of cartilage, which makes them lighter and more flexible.",0,0,1,0,bio,female,white / european-american,38,a
+186,turkey,"bare, ornamented head and neck","turkeys have wattles , a snood , and often a bluish-red skin that can change color with mood and arousal.",0,0,1,0,bio,female,white / european-american,38,a
+187,dog,it's relationship with humans,the way a dog wants to be part of the family with humans.  they are pack animals,0,0,1,0,bio,female,white / european-american,57,b
+187,fly,their wings,they can fly around and get to where they want to go.,0,0,1,0,bio,female,white / european-american,57,b
+189,fly,their unique vision and response time.,"they have wings. if they didn't, would they be called a stand?",0,0,1,0,bio,male,white / european-american,45,a
+190,dog,the most important features are that it has four legs and its nose,the four legs are how the dog gets around and runs and the keen sense of smell,0,0,1,0,bio,female,white / european-american,59,a
+190,bat,i think the most important features of that make a bat are the wings and the wing span and the ability to see at night.,i think it has those features because all creatures have unique features and what makes a bat a bat is that it is a nocturnal creature that flies around.,0,0,1,0,bio,female,white / european-american,59,a
+194,dog,"a dog is a domesticated, social animal with strong senses and close ties to humans.",dogs have their traits because they evolved from wolves and were domesticated by humans.,0,0,1,0,bio,female,white / european-american,51,b
+197,coyote,the fact that unlike a wolf it is smaller and more slender.,it because it is a smaller version of a wolf.,1,0,0,0,bio,male,black / african american,56,b
+199,dog,"social bonding with humans,  canine communication","dogs form strong emotional attachments and respond to human cues.
+barking, tail wagging, body language—dogs use rich signals to interact.",0,0,1,0,bio,male,latino / hispanic,30,b
+199,turkey,fan-shaped tail  and  wattle and snood,used in mating displays and territorial signaling  and  fleshy facial features that change color with emotion or arousal,0,0,1,0,bio,male,latino / hispanic,30,b
+201,turkey,"larger body, big feather tail, turkey neck",evolution and adapting to their environment,1,0,0,0,bio,female,white / european-american,32,a
+205,coyote,"the coyote has fierce teeth for tearing at flesh, and long legs for running after prey.","the coyote will feed on smaller animals and must hunt regularly. it is fast, muscular, and an efficient killer.",0,0,1,0,bio,female,white / european-american,73,b
+208,osprey,"size, pattern, behavior","much like the other question, it fills its own niche compared to other birds. it evolved to it.",1,0,0,0,bio,male,white / european-american,30,a
+208,coyote,exact proportions and behaviors,it fills a different niche than other canines.,1,0,0,0,bio,male,white / european-american,30,a
+210,dog,"behavioral traits
+companionship","behavioral traits,such as guarding,herding,hunting,retrieving and scent detection
+companionship,they exhibit loyalty,unconditional love and ability to work well with humans",0,0,1,0,bio,female,black / african american,39,a
+210,snail,"shell
+foot
+radula","shell,they have a spiral shell that is hard
+foot,they have a muscular foot used for movement,it secretes mucus which helps the snail glide
+radula,used to scrape food from surfaces",0,0,1,0,bio,female,black / african american,39,a
+210,osprey,"zygodactyly
+diet and hunting","zygodactyly,they can reverse their outer toe which helps them grasp fish securely with two toes forward and two back
+diet and hunting,they are fish eating birds of prey",0,0,1,0,bio,female,black / african american,39,a
+212,fly,wings,god created it that way,0,0,1,0,bio,female,white / european-american,30,a
+212,osprey,talons and wings,god created it that way,0,0,1,0,bio,female,white / european-american,30,a
+212,shark,teeth and fins,"god created it that way
+",0,0,1,0,bio,female,white / european-american,30,a
+212,coyote,fur and howl,god created it that way,0,0,1,0,bio,female,white / european-american,30,a
+215,dog,their soul! they have the best hearts and are a true companion animal. they are loyal and their tails are made for wagging and showing happiness.,"dogs have smart and thoughtful eyes and soft fur, they are athletic and they have the best hearts and disposition. they are companion animals and love their humans throughout their short lives.",0,0,1,0,bio,female,white / european-american,58,a
+216,snail,their shell is an important feature.,because they come out of their shell.,0,0,1,0,bio,male,white / european-american,54,a
+221,osprey,"the claws, colors of the feathers, beak,",they have features that stand out and makes it different from other similar species,0,0,1,0,bio,female,black / african american,39,a
+221,turkey,"the neck and heat, the beak, the legs and feathers",the mouth and head seems very distinct from most other birds and also the feather formation arrangement,0,0,1,0,bio,female,black / african american,39,a
+222,osprey,"the talons, colors and eyesight.",it is a raptor that can hunt on both land and water.,0,0,1,0,bio,male,white / european-american,57,b
+224,dog,its face and,to let us know what its trying to communicate to us,0,0,1,0,bio,female,asian / asian-american,59,b
+228,turkey,its red head and round voluptuous body and a tail that sticks up,because that's how god chose him to look like.,0,0,1,0,bio,female,black / african american,40,b
+229,dog,love,dogs are companions that give unconditional love at all times.,0,0,1,0,bio,female,white / european-american,76,b
+229,fly,i would say his sense of smell.,i think it has a good sense of smell so it can aggrevate people.,0,0,1,0,bio,female,white / european-american,76,b
+230,dog,personality,"breed of dog, how it was raised",0,0,1,0,bio,female,white / european-american,24,a
+233,dog,behavior towards a human and diet.,"the way they were raised, they are supposed to be domesticated. they eat dog food instead of other animals.",0,0,1,0,bio,male,white / european-american,37,b
+233,bat,"the color, the wings and size.",the color is darker to blend in with their environment they live in. i think their wings are as flexible to support their hunting and flying. then they are small so they are able to fly,0,0,1,0,bio,male,white / european-american,37,b
+237,dog,it's fur and snout.,i think a dog has fur that keeps it warm and there isn't typically a different pattern for each animal.,0,0,1,0,bio,male,white / european-american,31,b
+240,dog,the face and body and its four legs,they have those features to distinquish their features from different types of animals.,0,0,1,0,bio,female,white / european-american,47,a
+240,snail,his slimy body and swirly hard shell.,they have those features so you can tell it apart from other animals.,0,0,1,0,bio,female,white / european-american,47,a
+240,shark,the shape of its tail and its teeth.,to know it is a shark and to get away if you can or you are in trouble.,0,0,1,0,bio,female,white / european-american,47,a
+240,coyote,his fur and patterns of his body.,they make you be able to tell it is a coyote.,0,0,1,0,bio,female,white / european-american,47,a
+247,dog,their face and their bark.,it helps you distinguish them from other mammals.,0,0,1,0,bio,female,white / european-american,32,a
+247,fly,the wings and their eyes.,it helps distinguish them from other insects.,0,0,1,0,bio,female,white / european-american,32,a
+248,dog,i think a dogs fur is one of the most important features,a dog's features are inherent to the breed of the dog.  their tail and happy-go-lucky nature and personality are really what make them who they are.,0,0,1,0,bio,female,white / european-american,55,a
+249,snail,"shell, flat body that is also a foot, antennae like things, ability to crawl",the way it evolved to live in a certain environment,1,0,0,0,bio,other / prefer not to answer,other / prefer not to answer,58,a
+249,coyote,"four legs, muzzle, fur, yippy bark, sharp teeth, fear","how it evolved, how it lives its life scavenging and trying to survive",0,0,1,0,bio,other / prefer not to answer,other / prefer not to answer,58,b
+249,bat,"wings, echolocation, fur, warm blooded",it is a mammal that has developed the ability to fly and to easily locate insects with poor vision,0,0,1,0,bio,other / prefer not to answer,other / prefer not to answer,58,b
+254,bat,the wings and the fact that it sleeps upside down,i'm actually not sure why bats sleep upside down - does it allow them to escape danger faster?,0,0,1,0,bio,female,white / european-american,88,b
+254,turkey,"the red feature that hangs down over its beak, and the arc of feathers at the back",i'm sure they have some kind of evolutionary purpose but i'm not sure what that is,1,0,0,0,bio,female,white / european-american,88,a
+255,dog,four-legged,"behavioral traits: loyalty, trainability, social bonding with humans, and strong sense of smell and hearing.",0,0,1,0,bio,male,black / african american,39,a
+255,osprey,hooked beak,"the lord has designed it to be so
+",0,0,1,0,bio,male,black / african american,39,b
+256,dog,"their friendliness, loyalty",it has those featres mostly because it has been raised by humans and not in the wild and they are kind creatures who show appreciation to the people who rake care of them,0,0,1,0,bio,female,white / european-american,26,a
+256,fly,its speed and buzzing,"it buzzes maybe because that is the sound of their wings moving rapidly and it moves fast because it is small and doesn't have a lot of weight to carry around that could hold them back, and it moves fast to avoid ever being hit with a flyswatter.",0,0,1,0,bio,female,white / european-american,26,b
+257,shark,a shark's sense of smell and it's ability to swim in water.,typically a shark  can smell substance(such as blood)  up to a mile a way. in addition a shark is known for having excellant vision and good teeth for hunting.,0,0,1,0,bio,male,american indian / alaska native,33,b
+258,osprey,"the body shape, the talons, sharp beak, and wingspan.",because everything about the osprey focuses on sleekness and speed of flight.,0,0,1,0,bio,male,white / european-american,46,a
+263,osprey,the beak and the feathers,god made them that way,0,0,1,0,bio,male,white / european-american,59,a
+263,shark,the teeth and the tail,it's the way god made them,0,0,1,0,bio,male,white / european-american,59,a
+263,coyote,the ears and the tail,god made them that way,0,0,1,0,bio,male,white / european-american,59,a
+267,osprey,claws and wingspan.,it is a hunter over distance.,0,0,1,0,bio,male,white / european-american,72,b
+267,shark,teeth,it hunts and eats other animals.,0,0,1,0,bio,male,white / european-american,72,b
+268,dog,more close to do the job,very nice and more effective,0,0,1,0,bio,male,white / european-american,35,a
+268,osprey,more nice to do the job,very nicely to do the job,0,0,1,0,bio,male,white / european-american,35,a
+268,coyote,very good and more important,more nice to do the job effectively,0,0,1,0,bio,male,white / european-american,35,a
+268,turkey,very good to do the job nicely,more effective and do the job nicely,0,0,1,0,bio,male,white / european-american,35,a
+270,dog,"the physical makeup of the animal, it's behavior, and ability to be domesticated.",thousands of years of interactions with humans and training.,0,0,1,0,bio,male,black / african american,55,b
+273,bat,wings/ultrasonic ears,easy to live in their environment with these adaptations.,0,0,1,0,bio,male,black / african american,30,b
+276,dog,the most important features are that make a dog a dog is their tails.,the dog have those features because that is how they express their emotions.,0,0,1,0,bio,female,asian / asian-american,41,b
+276,shark,the most important features that make a shark a shark is their teeth.,those features make a shark a shark because they are the only type of big sea animal that have sharp teeth.,0,0,1,0,bio,female,asian / asian-american,41,a
+277,dog,"dogs usually have four legs, fur, a tail, and a snout. they bark, wag their tails, and are friendly, loyal animals.","dogs came from wolves a long time ago. over time, people raised and trained them, which gave dogs the looks and behaviors we see today—like being playful, loving, and good at living with humans.",0,0,1,0,bio,male,white / european-american,34,b
+279,bat,"being a mammal, leathery wings, echolocation, dna","genetics, dna, evolutionary pressures",1,1,0,1,bio,female,white / european-american,26,a
+279,turkey,"feathers, size, the dangly wattle thing, genetics, bald neck","genetics/dna, evolution. selective pressures or selective breeding",1,1,0,1,bio,female,white / european-american,26,a
+280,turkey,i think the noise it makes and the back feather,"the back feathers spread which is what makes it a turkey, and then of course the noise that it makes, it is a special noise that a turkey makes",0,0,1,0,bio,male,white / european-american,31,a
+288,dog,"its soft and furry body, four legs to run around on and great ears to hear and hunt.","it is a loving companion, and has great hearing to help it hunt",0,0,1,0,bio,female,white / european-american,43,b
+289,fly,"eyes, wings",speed and vision,0,0,1,0,bio,male,white / european-american,73,a
+291,bat,"this is a small mammal that flys, hangs upside down, and eats insects. they are nocturnal.",it uses its features that have evolved over many years to survive.,0,0,1,0,bio,male,white / european-american,46,b
+292,coyote,obviuosly a predator animal,keen sense of smell,1,0,0,0,bio,male,white / european-american,68,b
+297,dog,its personality and its ears,i think a dogs personality with how they interact with humans and being dogs best friend makes them a dog.,0,0,1,0,bio,male,latino / hispanic,36,a
+304,osprey,speed and size. extraordinary eyesight.,"little and fast is a big advantage, and so is good eyesight",0,0,1,0,bio,male,white / european-american,71,b
+304,shark,"sharp, powerful teeth and jaws, never sleeps and must always keep moving to survive.","i gather that they found their perfect place in the evolutionary scheme and have not really evolved for millions of years. their size and teeth make them apex aquatic predators, i have no idea why they would evolve to have to keep moving to keep from suffocating, but i wouldn't want to fall asleep under those conditions either.",1,0,0,0,bio,male,white / european-american,71,a
+305,bat,"bats are the only mammals capable of sustained powered flight (not just gliding like flying squirrels).
+their wings are modified hands—literally! the wing membrane (called the patagium) stretches across elongated fingers.","bats likely evolved from small, tree-dwelling mammals that glided between branches.
+over time, natural selection favored individuals who could glide farther, then flap, and eventually fly.
+wings gave them access to new food sources (flying insects) and escape from predators.",1,0,0,0,bio,male,white / european-american,32,a
