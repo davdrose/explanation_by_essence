@@ -44,7 +44,7 @@ Lockean essentialism holds that people explain the characteristic features of na
 		- ([pre-registration](https://osf.io/pnfhu/overview?view_only=21d3db8318f643df87f58c9ac4d9aa8c)) 	 
 - `R` contains the analysis scripts that were used to analyze data and generate figures
 	 <!-- (view a rendered file [here](https://davdrose.github.io/explanation_by_essence/)). -->
-	 (view a rendered file [here](https://anonymous.4open.science/w/explanation_by_essence-D28B/)).
+	 (view a rendered file by clicking `website` above).
 - `data/` contains anonymized data from all experiments
 - `figures/` contains all the figures from the paper (generated using the script in `code/R/`). 
 
